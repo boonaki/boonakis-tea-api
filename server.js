@@ -24,7 +24,7 @@ const teas = {
     },
 }
 
-app.get('/', (res,req) => {
+app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
 })
 
