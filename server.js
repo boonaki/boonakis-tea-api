@@ -31,9 +31,9 @@ app.get('/', (req, res) => {
 app.get('/api/:name', (req,res) => {
     let teaname = req.params.name.toLowerCase()
     if(teas[teaname]){
-        res.json(tea[teaname])
+        res.json(teas[teaname])
     }else{
-        res.json(tea.unknown)
+        res.json(teas.unknown)
     }
 })
 
