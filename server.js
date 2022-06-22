@@ -7,21 +7,31 @@ app.use(cors())
 const PORT = process.env.PORT || 8000
 
 /*
-Each tea will have origin, name, color, image, taste description
+Each tea will have origin, name, color, image, taste description and plant derivative
 */
+
 
 const teas = {
     'earl gray' : {
         'Origin' : 'England',
         'Caffeine' : '40-120mg',
         'Color' : 'Grey, earthy beige',
+        "plant" : 'blend'
     },
-    'green tea' : {
-        //"image" : "file path",
+    'green' : {
+        "image" : "assets/green.jpg",
         'Origin' : 'China',
         'Caffeine' : '12mg',
         'Color' : 'Green',
-        "taste" : 'sweet, bittersweet, nutty, vegetal, buttery, floral, fruity, and oceanic'
+        'taste' : 'sweet, bittersweet, nutty, vegetal, buttery, floral, fruity, oceanic',
+        'plants' : 'Camellia sinensis'
+    },
+    'oolong' : {
+        'Origin' : 'China',
+        'Caffeine' : '12mg',
+        'Color' : 'Green',
+        'taste' : 'varied',
+        'plant' : 'Camellia sinensis'
     },
     'unknown' : {
         'Origin' : 'NA',
