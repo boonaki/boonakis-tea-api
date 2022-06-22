@@ -38,5 +38,5 @@ app.get('/api/:name', (req,res) => {
 })
 
 app.listen(PORT, () => {
-    console.log('server is now running on port 8000')
+    console.log('server is now running')
 })
