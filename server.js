@@ -6,6 +6,10 @@ app.use(cors())
 
 const PORT = process.env.PORT || 8000
 
+/*
+Each tea will have origin, name, color, image, taste description
+*/
+
 const teas = {
     'earl gray' : {
         'Origin' : 'England',
@@ -13,9 +17,11 @@ const teas = {
         'Color' : 'Grey, earthy beige',
     },
     'green tea' : {
+        //"image" : "file path",
         'Origin' : 'China',
         'Caffeine' : '12mg',
         'Color' : 'Green',
+        "taste" : 'sweet, bittersweet, nutty, vegetal, buttery, floral, fruity, and oceanic'
     },
     'unknown' : {
         'Origin' : 'NA',
@@ -28,7 +34,11 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
 })
 
-app.get('/api/:name', (req,res) => {
+app.get('/api/teas', (req,res) => {
+    res.json(teas)
+})
+
+app.get('/api/teas/:name', (req,res) => {
     let teaname = req.params.name.toLowerCase()
     if(teas[teaname]){
         res.json(teas[teaname])
@@ -36,6 +46,7 @@ app.get('/api/:name', (req,res) => {
         res.json(teas.unknown)
     }
 })
+
 
 app.listen(PORT, () => {
     console.log('server is now running')
