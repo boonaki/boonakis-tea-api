@@ -15,24 +15,26 @@ https://tea-api-boonaki.herokuapp.com/
 
 const teas = {
     'earlgray' : {
+        "name" : "Earl Gray",
         "image" : "https://tea-api-boonaki.herokuapp.com/assets/earl_gray.jpg",
-        'Origin' : 'England',
-        'Caffeine' : '40-120mg',
-        'Color' : 'Grey, earthy beige',
+        'origin' : 'England',
+        'caffeine' : '40-120mg',
+        'color' : 'Grey, earthy beige',
         "plant" : 'blend'
     },
     'green' : {
+        "name": "Green",
         "image" : "https://tea-api-boonaki.herokuapp.com/assets/green.jpg",
-        'Origin' : 'China',
-        'Caffeine' : '12mg',
-        'Color' : 'Green',
+        'origin' : 'China',
+        'caffeine' : '12mg',
+        'color' : 'Green',
         'taste' : 'sweet, bittersweet, nutty, vegetal, buttery, floral, fruity, oceanic',
         'plants' : 'Camellia sinensis'
     },
     'oolong' : {
-        'Origin' : 'China',
-        'Caffeine' : '12mg',
-        'Color' : 'Green',
+        'origin' : 'China',
+        'caffeine' : '12mg',
+        'color' : 'Green',
         'taste' : 'varied',
         'plant' : 'Camellia sinensis'
     },
