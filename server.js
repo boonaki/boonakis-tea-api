@@ -10,18 +10,19 @@ const PORT = process.env.PORT || 8000
 
 /*
 Each tea will have origin, name, color, image, taste description and plant derivative
+https://tea-api-boonaki.herokuapp.com/
 */
 
 const teas = {
     'earlgray' : {
-        "image" : "/assets/earl_gray.jpg",
+        "image" : "https://tea-api-boonaki.herokuapp.com/assets/earl_gray.jpg",
         'Origin' : 'England',
         'Caffeine' : '40-120mg',
         'Color' : 'Grey, earthy beige',
         "plant" : 'blend'
     },
     'green' : {
-        "image" : "/assets/green.jpg",
+        "image" : "https://tea-api-boonaki.herokuapp.com/assets/green.jpg",
         'Origin' : 'China',
         'Caffeine' : '12mg',
         'Color' : 'Green',
