@@ -3,13 +3,13 @@ const app = express()
 const cors = require('cors')
 
 app.use(cors())
+app.use(express.static('public'))
 
 const PORT = process.env.PORT || 8000
 
 /*
 Each tea will have origin, name, color, image, taste description and plant derivative
 */
-
 
 const teas = {
     'earl gray' : {
@@ -19,7 +19,7 @@ const teas = {
         "plant" : 'blend'
     },
     'green' : {
-        "image" : "assets/green.jpg",
+        "image" : "/green.jpg",
         'Origin' : 'China',
         'Caffeine' : '12mg',
         'Color' : 'Green',
