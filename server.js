@@ -9,7 +9,7 @@ app.use('/assets', express.static('assets'));
 const PORT = process.env.PORT || 8000
 
 /*
-Each tea will have origin, type (if not base type), 
+Each tea will have name, origin, type (if not base type), caffeine levels, description, taste and color 
 https://tea-api-boonaki.herokuapp.com/
 */
 
