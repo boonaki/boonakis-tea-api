@@ -9,7 +9,9 @@ app.use('/assets', express.static('assets'));
 const PORT = process.env.PORT || 8000
 
 /*
-Each tea will have name, origin, type (if not base type), caffeine levels, description, taste and color 
+Each tea will have name, image, origin, type (if not base type), caffeine levels, description, taste and color
+NOTE: not every tea known to man is in this database
+If tea is a blend, include disclaimer that original type is only included in the blend
 https://tea-api-boonaki.herokuapp.com/
 */
 
@@ -23,49 +25,63 @@ const teas = {
         'colorDescription' : 'red, amber',
         'tasteDescription' : 'smoky, earthy, spicy, nutty, citrus, caramel, leather, fruity, and honey',
         'types' : {
-            "Assam tea" : {
-                
+            "assam" : {
+                'name' : 'Assam Tea',
+                'altnames' : '',
             },
-            "Darjeeling" : {
-
+            "darjeeling" : {
+                'name' : 'Darjeeling',
+                'altnames' : '',
             },
-            "Lapsang Souchong" : {
-
+            "lapsangSouchong" : {
+                'name' : 'Lapsang Souchong',
+                'altnames' : '',
             },
-            "Keemun" : {
-
+            "keemun" : {
+                'name' : 'Keemun',
+                'altnames' : '',
             },
-            "Dian Hong" : {
-
+            "dianHong" : {
+                'name' : 'Dian Hong',
+                'altnames' : '',
             },
-            "Orange Pekoe" : {
-
+            "orangePekoe" : {
+                'name' : 'Orange Pekoe',
+                'altnames' : '',
             },
         },
         'blends' : {
-            "Earl Grey" : {
-                
+            "earlGrey" : {
+                'name' : 'Earl Grey',
+                'altnames' : '',
             },
-            "Lady Grey" : {
-                
+            "ladyGrey" : {
+                'name' : 'Lady Grey',
+                'altnames' : '',
             },
-            "English Breakfast" : {
-                
+            "englishBreakfast" : {
+                'name' : 'English Breakfast',
+                'altnames' : '',
             },
-            "English Afternoon" : {
-                
+            "englishAfternoon" : {
+                'name' : 'English Afternoon',
+                'altnames' : '',
             },
-            "Irish Breakfast" : {
-                
+            "irishBreakfast" : {
+                'name' : 'Irish Breakfast',
+                'altnames' : '',
             },
-            "Masala Chai" : {
-                
+            "masalaChai" : {
+                'name' : 'Masala Chai',
+                'altnames' : '',
             },
-            "Russian Caravan" : {
-
+            "russianCaravan" : {
+                'name' : 'Russian Caravan',
+                'altnames' : '',
             },
-            "Lychee black tea" : {
-
+            "lycheeBlackTea" : {
+                'name' : 'Lychee Black Tea',
+                'altnames' : '',
             },
         }
     },
