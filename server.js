@@ -19,31 +19,91 @@ const teas = {
 
     'black' : {
         'name' : 'Black Tea',
+        'altnames' : 'Red Tea',
         'origin' : 'China',
+        'image' : 'https://commons.wikimedia.org/wiki/File:Cup_of_black_tea.JPG#/media/File:Cup_of_black_tea.JPG',
         'caffeine' : '40-120mg',
-        'description' : '',
+        'sources' : ['https://en.wikipedia.org/wiki/Black_tea'],
+        'description' : 'Black tea, also translated to red tea in various East Asian languages, is a type of tea that is more oxidized than other types',
         'colorDescription' : 'red, amber',
         'tasteDescription' : 'smoky, earthy, spicy, nutty, citrus, caramel, leather, fruity, and honey',
         'types' : {
             "assam" : {
                 'name' : 'Assam Tea',
                 'altnames' : '',
+                'image' : 'https://commons.wikimedia.org/wiki/File:Assam-Tee_SFTGFOP1.jpg#/media/File:Assam-Tee_SFTGFOP1.jpg',
+                'origin' : 'Assam, India',
+                'caffeine' : '60-110mg',
+                'decription' : 'Assam tea is mostly grown at or near sea level and is known for its body, briskness, malty flavour, and strong, bright colour. Assam teas, or blends containing Assam, are often sold as "breakfast" teas.',
+                'sources' : ['https://en.wikipedia.org/wiki/Assam_tea'],
+                'colorDescription' : 'deep-amber',
+                'tasteDescription' : 'The flavor can range from brisk, smokey, earthy, musky and strong to a lighter cup with chocolate, cocoa, or even sweet and spicy notes',
+
             },
+
             "darjeeling" : {
-                'name' : 'Darjeeling',
+                'name' : 'Darjeeling Tea',
                 'altnames' : '',
+
+                'image' : 'https://commons.wikimedia.org/wiki/File:Darjeeling,_India,_Darjeeling_tea_in_variety,_Black_tea.jpg#/media/File:Darjeeling,_India,_Darjeeling_tea_in_variety,_Black_tea.jpg',
+
+                'origin' : 'India',
+                'caffeine' : '50-120mg',
+
+                'decription' : 'Darjeeling tea is a black tea that is grown and processed in the Darjeeling or Kalimpong Districts in West Bengal, also among the only teas in the world with a Geographical Indication trademark',
+
+                'sources' : ['hhttps://en.wikipedia.org/wiki/Darjeeling_tea', 'https://www.thespruceeats.com/tea-flushes-in-darjeeling-765194', 'https://www.seriouseats.com/why-you-should-drink-more-darjeeling-tea-what-is-first-flush'],
+
+                'colorDescription' : 'varying based on how its brewed, from light yellow to orange to a deep red.',
+                'tasteDescription' : 'musky-sweet tasting notes similar to muscat wine',
             },
+            
             "lapsangSouchong" : {
                 'name' : 'Lapsang Souchong',
-                'altnames' : '',
+                'altnames' : 'Smoked Tea, Smoky Souchong',
+                'image' : 'https://commons.wikimedia.org/wiki/File:Lapsang_Souchong.jpg#/media/File:Lapsang_Souchong.jpg',
+
+                'origin' : 'Fujian Province, China',
+                'caffeine' : 'varying',
+
+                'decription' : 'Lapsang Souchong is a tea that is smoke-dried over a pinewood fire',
+
+                'sources' : ['https://en.wikipedia.org/wiki/Lapsang_souchong', ],
+
+                'colorDescription' : 'ranging from amber to caramel to deep red.',
+                'tasteDescription' : 'sweet, piney, smoky',
             },
+
             "keemun" : {
                 'name' : 'Keemun',
-                'altnames' : '',
+                'altnames' : 'Qimen Red Tea',
+                'image' : 'https://commons.wikimedia.org/wiki/File:Keemun-img1.jpg#/media/File:Keemun-img1.jpg',
+
+                'origin' : 'China',
+                'caffeine' : '25-45mg',
+
+                'decription' : 'A black tea ',
+
+                'sources' : ['https://en.wikipedia.org/wiki/Keemun'],
+
+                'colorDescription' : 'bright red',
+                'tasteDescription' : 'smooth, fruity, malty, unsweetened cocoa',
             },
+
             "dianHong" : {
                 'name' : 'Dian Hong',
                 'altnames' : '',
+                'image' : '',
+
+                'origin' : '',
+                'caffeine' : '',
+
+                'decription' : '',
+
+                'sources' : [''],
+
+                'colorDescription' : '',
+                'tasteDescription' : '',
             },
             "orangePekoe" : {
                 'name' : 'Orange Pekoe',
@@ -214,7 +274,7 @@ const teas = {
 
     'white' : {
         'name' : 'White Tea',
-        'caffeine' : 'time and temperature based',
+        'caffeine' : 'time/temperature based',
         'origin' : 'East Asia',
         'description' : '',
         'colorDescription' : 'Light green or light yellow',
@@ -248,6 +308,18 @@ const teas = {
 
             }
         }
+    },
+
+    'yellow' : {
+        'name' : 'Yellow Tea',
+        'caffeine' : 'time/temperature based',
+        'origin' : 'East Asia',
+        'description' : '',
+        'colorDescription' : 'Light green or light yellow',
+        'tasteDescription' : 'floral, fresh, fruity, with a hint of cucumber or melon.',
+        'types' : {
+
+        },
     },
 
     'unknown' : {
