@@ -427,62 +427,36 @@ const teas = {
 
                 'sources' : ['https://teapedia.org/en/Ruan_Zhi'],
             },
-            "Jin Xuan" : {
-                'name' : '',
-                'altnames' : '',
-                'image' : '',
+
+            "jinxuan" : {
+                'name' : 'Jin Xuan',
+                'altnames' : 'Milk Oolong, Nai Xiang',
+                'image' : 'https://commons.wikimedia.org/wiki/File:Jin_Xuan_oolong_tea.jpg#/media/File:Jin_Xuan_oolong_tea.jpg',
                 
-                'origin' : '',
-                'caffeine' : '',
+                'origin' : 'Taiwan',
+                'caffeine' : '10-20mg',
 
-                'description' : '',
-                'colorDescription' : '',
-                'tasteDescription' : '',
+                'description' : 'A variety of oolong tea developed in 1980',
+                'colorDescription' : 'dark yellow',
+                'tasteDescription' : 'taste is light, creamy, and flowery and sometimes compared to milk',
 
-                'sources' : [''],
+                'sources' : ['https://en.wikipedia.org/wiki/Jin_Xuan_tea'],
             },
-            "Black Oolong" : {
-                'name' : '',
-                'altnames' : '',
-                'image' : '',
-                
-                'origin' : '',
-                'caffeine' : '',
 
-                'description' : '',
-                'colorDescription' : '',
-                'tasteDescription' : '',
-
-                'sources' : [''],  
-            },
             "Assam Smoked Oolong" : {
-                'name' : '',
+                'name' : 'Assam Smoked Oolong',
                 'altnames' : '',
-                'image' : '',
+                'image' : 'https://tea-api-boonaki.herokuapp.com/assets/assam-smokedoolong.jpg',
                 
-                'origin' : '',
-                'caffeine' : '',
+                'origin' : 'China',
+                'caffeine' : 'NA',
 
-                'description' : '',
-                'colorDescription' : '',
-                'tasteDescription' : '',
+                'description' : 'Assam Smoked Oolong is a highly unusual and rare oak smoked tea from Mothola Tea Estate in Assam. ',
+                'colorDescription' : 'amber red',
+                'tasteDescription' : 'oaky, smokey, sweet, malty, has notes of apricots and tobacco',
 
                 'sources' : [''],
             },
-            "Vietnamese Oolong" : {
-                'name' : '',
-                'altnames' : '',
-                'image' : '',
-                
-                'origin' : '',
-                'caffeine' : '',
-
-                'description' : '',
-                'colorDescription' : '',
-                'tasteDescription' : '',
-
-                'sources' : [''],
-            }
 
         },
     },
