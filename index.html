@@ -5,9 +5,61 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="./assets/css/normalize.css">
     </head>
     <body>
-        <h1>Welcome to my tea API</h1>
-        <span>Please use https://tea-api-boonaki.herokuapp.com/api/teas/[tea_name]</span>
+        <section id="doc">
+            <h1>A free, open-source API for Teas</h1>
+            <p>This is a free tea database that gives simple information about various teas and their types</br>
+            A majority of the information gathered comes from https://www.wikipedia.org</p>
+            <p>Teas will contain the following information</p>
+            <ul>
+                <li>Name</li>
+                <li>Alternate Names</li>
+                <li>Origin</li>
+                <li>Image</li>
+                <li>Caffeine Content (1 cup/8 fl. oz.)</li>
+                <li>Type or types</li>
+                <li>Quick description</li>
+                <li>Taste description</li>
+                <li>Color description</li>
+                <li>If tea is a blend, data will include the main ingredients</li>
+            </ul>
+            <div id="instructions">
+                <h2>Instructions for Use</h2>
+                <p>In this database, their are two main objects inside of the data being sent</p>
+                <p>1. An organized list of the teas with teas sorted by types and nested within their main types object</p>
+                <p>2. An unorganized list of all of the teas in the database</p>
+                To access the organized list, use the url "https://tea-api-boonaki.herokuapp.com/api/teas"</br>
+                To access the un-organized list, use the url "https://tea-api-boonaki.herokuapp.com/api/all"</br>
+                To query the database for individual teas, use the url "https://tea-api-boonaki.herokuapp.com/api/teas/[teaname]"</p>
+                <span>All specified endpoints will return an object</span></br>
+                
+                <span>For example: the url "https://tea-api-boonaki.herokuapp.com/api/teas/earlgrey" will return the following object</span>
+                <pre class="clear">
+                    <code class="clear">
+"earlgrey" : {
+    'name' : 'Earl Grey',
+    'altnames' : '',
+    'image' : 'https://commons.wikimedia.org/wiki/File:Earl_Grey_Tea.jpg#/media/File:Earl_Grey_Tea.jpg',
+        
+    'origin' : 'UK*',
+    'type' : 'blend',
+    'caffeine' : '40-120',
+    'mainIngredients' : 'Black Tea, Oil of Bergamot',
+
+    'description' : 'A tea blend which has been flavoured with oil of bergamot',
+    'colorDescription' : 'Amber, deep orange',
+    'tasteDescription' : 'smoky, earthy, spicy, nutty, citrus, caramel, leather, fruity, and honey',
+
+    'sources' : ['https://en.wikipedia.org/wiki/Earl_Grey_tea'],
+},
+                    </code>
+                </pre>
+            </div>
+        </section>
+        
+        <!-- <span>Please use https://tea-api-boonaki.herokuapp.com/api/teas/[tea_name]</span> -->
     </body>
 </html>
