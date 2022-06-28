@@ -21,6 +21,12 @@ https://tea-api-boonaki.herokuapp.com/
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
 })
+app.get('/api/all', (req,res) => {
+    for(key in allTeas){
+        console.log(key)
+    }
+    res.json(allTeas)
+})
 
 app.get('/api/teas', (req,res) => {
     res.json(teas)

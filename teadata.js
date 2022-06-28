@@ -1,7 +1,7 @@
 /*
 Each tea will have name, any alternate names, image, origin, type (if not base type), caffeine levels, description, taste and color
 NOTE: not every tea known to man is in this database
-If tea is a blend, include disclaimer that original type is only included in the blend
+
 https://tea-api-boonaki.herokuapp.com/
 */
 
@@ -446,7 +446,7 @@ const unorganizedTeas = {
         'sources' : ['https://en.wikipedia.org/wiki/Jin_Xuan_tea'],
     },
 
-    "Assam Smoked Oolong" : {
+    "assamsmokedoolong" : {
         'name' : 'Assam Smoked Oolong',
         'altnames' : '',
         'image' : 'https://tea-api-boonaki.herokuapp.com/assets/assam-smokedoolong.jpg',
@@ -660,9 +660,9 @@ const unorganizedTeas = {
     },
 }
 
+
 /***********************************
 /***** TEAS ORGANIZED BY TYPE *****/
-
 
 const organizedTeas = {
 
@@ -1116,7 +1116,7 @@ const organizedTeas = {
                 'sources' : ['https://en.wikipedia.org/wiki/Jin_Xuan_tea'],
             },
 
-            "Assam Smoked Oolong" : {
+            "assamsmokedoolong" : {
                 'name' : 'Assam Smoked Oolong',
                 'altnames' : '',
                 'image' : 'https://tea-api-boonaki.herokuapp.com/assets/assam-smokedoolong.jpg',
