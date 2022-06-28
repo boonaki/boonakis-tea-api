@@ -21,6 +21,7 @@ https://tea-api-boonaki.herokuapp.com/
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
 })
+
 app.get('/api/all', (req,res) => {
     res.json(allTeas)
 })
@@ -31,14 +32,14 @@ app.get('/api/teas', (req,res) => {
 
 app.get('/api/teas/:name', (req,res) => {
     let teaname = req.params.name.split(' ').join('').toLowerCase()
-    console.log(teas)
     
     if(teas[teaname]){
         res.json(teas[teaname])
+    }else if(allTeas[teaname]){
+        res.json(allTeas[teaname])
     }else{
         res.json(teas.unknown)
     }
-    // TODO: find tea type if not one of the main types and return tea in types key of main type(black,white,oolong,green)
 })
 
 
