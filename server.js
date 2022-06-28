@@ -259,7 +259,7 @@ const teas = {
         'name' : 'Wulong (oolong) Tea',
         'caffeine' : '37-55mg',
         'origin' : 'East Asia',
-        'description' : '',
+        'description' : 'A traditional semi-oxidized Chinese tea produced through a process including withering the plant under strong sun and oxidation before curling and twisting',
         'colorDescription' : 'bright green or yellow, or dark amber and red',
         'tasteDescription' : 'Similar to black tea, though varied oxidation levels results in widely varied tastes',
         'types' : {
@@ -465,136 +465,84 @@ const teas = {
         'name' : 'White Tea',
         'caffeine' : 'time/temperature based',
         'origin' : 'East Asia',
-        'description' : '',
+        'description' : 'A style of tea that features young or minimally processed leaves of the Camellia sinensis plant',
         'colorDescription' : 'Light green or light yellow',
         'tasteDescription' : 'floral, fresh, fruity, with a hint of cucumber or melon.',
         'types' : {
-            "Bai Hao Yin Zhen" : {
-                'name' : '',
-                'altnames' : '',
-                'image' : '',
+            "baihaoyinzhen" : {
+                'name' : 'Baihoi Yinzhen',
+                'altnames' : 'Silder Needle, Yinzhen',
+                'image' : 'https://commons.wikimedia.org/wiki/File:2010_FirstFlush_Yunnan_Baihao_Yinzhen.jpg#/media/File:2010_FirstFlush_Yunnan_Baihao_Yinzhen.jpg',
                 
-                'origin' : '',
-                'caffeine' : '',
+                'origin' : 'China',
+                'caffeine' : '0-5mg',
 
-                'description' : '',
-                'colorDescription' : '',
-                'tasteDescription' : '',
+                'description' : 'A white tea made from only the top buds of the Camellia sinensis plant.',
+                'colorDescription' : 'light orange, light yellow',
+                'tasteDescription' : 'sweet, vegetal, and delicate',
+
+                'sources' : ['https://en.wikipedia.org/wiki/Baihao_Yinzhen'],
+            },
+
+            "baimudan" : {
+                'name' : 'Baimudan tea',
+                'altnames' : 'White Peony tea, Mudan White tea',
+                'image' : 'https://commons.wikimedia.org/wiki/File:Baimudan.JPG#/media/File:Baimudan.JPG',
+                
+                'origin' : 'China',
+                'caffeine' : '15-30mg',
+
+                'description' : 'A type of white tea made from plucks each with one leaf shoot and two immediate young leaves (one bud two leaf ratio) of the Camellia sinensis plant.',
+                'colorDescription' : 'golden yellow',
+                'tasteDescription' : ' toasty, slightly sweet floral notes and a clean aftertaste.',
+
+                'sources' : ['https://en.wikipedia.org/wiki/Baimudan_tea'],
+            },
+
+            "shoumei" : {
+                'name' : 'Shoumei tea',
+                'altnames' : 'Sow Mee',
+                'image' : 'https://commons.wikimedia.org/wiki/File:Shou_Mei_tea.JPG#/media/File:Shou_Mei_tea.JPG',
+                
+                'origin' : 'China',
+                'caffeine' : '15-30mg',
+
+                'description' : 'A type of white tea produced from naturally withered upper leafs and tips',
+                'colorDescription' : 'darker green',
+                'tasteDescription' : 'sweet, vegetal, delicate',
+
+                'sources' : ['https://en.wikipedia.org/wiki/Shoumei_tea'],
+            },
+
+            "xueya" : {
+                'name' : 'Xue Ya',
+                'altnames' : 'Snow Buds, Phoenix Eye',
+                'image' : 'https://tea-api-boonaki.herokuapp.com/assets/xueya.jpg',
+                
+                'origin' : 'China',
+                'caffeine' : '15-30mg',
+
+                'description' : 'A complex white tea from Fuding in Fujian Province',
+                'colorDescription' : 'light yellow',
+                'tasteDescription' : 'smooth, juicy taste has clean notes of unripe fruits, light wood and just a touch of vegetal astringency.',
 
                 'sources' : [''],
             },
-            "Bai Mu Dan" : {
-                'name' : '',
-                'altnames' : '',
-                'image' : '',
-                
-                'origin' : '',
-                'caffeine' : '',
 
-                'description' : '',
-                'colorDescription' : '',
-                'tasteDescription' : '',
+            "satemwaantlers" : {
+                'name' : 'Satemwa Antlers',
+                'altnames' : '',
+                'image' : 'https://tea-api-boonaki.herokuapp.com/assets/satemwa-antlers.jpg',
+                
+                'origin' : 'Malawi',
+                'caffeine' : '10-25mg',
+
+                'description' : 'A white tea made from a blend of select Superior Cultivars from Malawi, making it rich in theanine and antioxidants.',
+                'colorDescription' : 'golden yellow',
+                'tasteDescription' : 'delicate sweetness of apricot and lychee lingers on the pallet',
 
                 'sources' : [''],
             },
-            "Shou Mei" : {
-                'name' : '',
-                'altnames' : '',
-                'image' : '',
-                
-                'origin' : '',
-                'caffeine' : '',
-
-                'description' : '',
-                'colorDescription' : '',
-                'tasteDescription' : '',
-
-                'sources' : [''],
-            },
-            "Jasmine Dragon Pearl" : {
-                'name' : '',
-                'altnames' : '',
-                'image' : '',
-                
-                'origin' : '',
-                'caffeine' : '',
-
-                'description' : '',
-                'colorDescription' : '',
-                'tasteDescription' : '',
-
-                'sources' : [''],
-            },
-            "White Tea Cake" : {
-                'name' : '',
-                'altnames' : '',
-                'image' : '',
-                
-                'origin' : '',
-                'caffeine' : '',
-
-                'description' : '',
-                'colorDescription' : '',
-                'tasteDescription' : '',
-
-                'sources' : [''],
-            },
-            "Snow Buds/Phoenix Eye" : {
-                'name' : '',
-                'altnames' : '',
-                'image' : '',
-                
-                'origin' : '',
-                'caffeine' : '',
-
-                'description' : '',
-                'colorDescription' : '',
-                'tasteDescription' : '',
-
-                'sources' : [''],
-            },
-            "Jade Pillar" : {
-                'name' : '',
-                'altnames' : '',
-                'image' : '',
-                
-                'origin' : '',
-                'caffeine' : '',
-
-                'description' : '',
-                'colorDescription' : '',
-                'tasteDescription' : '',
-
-                'sources' : [''],
-            },
-            "Malawi Satemwa Antlers" : {
-                'name' : '',
-                'altnames' : '',
-                'image' : '',
-                
-                'origin' : '',
-                'caffeine' : '',
-
-                'description' : '',
-                'colorDescription' : '',
-                'tasteDescription' : '',
-
-                'sources' : [''],
-            },
-            "White Darjeeling" : {
-                'name' : '',
-                'altnames' : '',
-                'image' : '',
-                
-                'origin' : '',
-                'caffeine' : '',
-
-                'description' : '',
-                'colorDescription' : '',
-                'tasteDescription' : '',
-
-                'sources' : [''],
-            }
         }
     },
 
@@ -735,6 +683,20 @@ const teas = {
             'tasteDescription' : '',
 
             'sources' : ['https://en.wikipedia.org/wiki/Genmaicha'],
+        },
+        "jasminedragonpearl" : {
+            'name' : 'Jasmine Dragon Pearl',
+            'altnames' : '',
+            'image' : '',
+            
+            'origin' : '',
+            'caffeine' : '',
+
+            'description' : '',
+            'colorDescription' : '',
+            'tasteDescription' : '',
+
+            'sources' : [''],
         },
     },
 
