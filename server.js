@@ -105,23 +105,23 @@ const teas = {
                 'colorDescription' : 'golden orange',
                 'tasteDescription' : 'sweet, floral, and honey-like, though tends to be stronger and more bitter than other red teas',
             },
+            "earlgrey" : {
+                'name' : 'Earl Grey',
+                'altnames' : '',
+                'image' : 'https://commons.wikimedia.org/wiki/File:Earl_Grey_Tea.jpg#/media/File:Earl_Grey_Tea.jpg',
+                
+                'origin' : 'UK*',
+                'caffeine' : '40-120',
+                'mainIngredients' : 'Black Tea, Oil of Bergamot',
+    
+                'description' : 'A tea blend which has been flavoured with oil of bergamot',
+                'colorDescription' : 'Amber, deep orange',
+                'tasteDescription' : 'smoky, earthy, spicy, nutty, citrus, caramel, leather, fruity, and honey',
+    
+                'sources' : ['https://en.wikipedia.org/wiki/Earl_Grey_tea'],
+            },
         }
     },
-
-    /*
-        'name' : '',
-        'altnames' : '',
-        'image' : '',
-                
-        'origin' : '',
-        'caffeine' : '',
-
-        'description' : '',
-        'colorDescription' : '',
-        'tasteDescription' : '',
-
-        'sources' : [''],
-    */
 
     'green' : {
         'name': 'Green Tea',
@@ -147,6 +147,7 @@ const teas = {
 
                 'sources' : ['https://en.wikipedia.org/wiki/Sencha'],
             },
+
             "matcha" : {
                 'name' : 'Matcha Tea',
                 'altnames' : '',
@@ -161,6 +162,7 @@ const teas = {
 
                 'sources' : ['https://en.wikipedia.org/wiki/Matcha'],
             },
+
             "bancha" : {
                 'name' : 'Bancha',
                 'altnames' : '',
@@ -175,6 +177,7 @@ const teas = {
 
                 'sources' : ['https://en.wikipedia.org/wiki/Bancha'],
             },
+
             "gyokuro" : {
                 'name' : 'Gyokuro',
                 'altnames' : 'Jade Dew, Pearl Dew',
@@ -189,6 +192,7 @@ const teas = {
 
                 'sources' : ['https://en.wikipedia.org/wiki/Gyokuro'],
             },
+
             "kukicha" : {
                 'name' : 'Kukicha',
                 'altnames' : 'Bōcha, Twig tea, Stalk tea',
@@ -203,6 +207,7 @@ const teas = {
 
                 'sources' : ['https://en.wikipedia.org/wiki/Kukicha'],
             },
+
             "konacha" : {
                 'name' : 'Konacha',
                 'altnames' : 'Gyokurokonacha',
@@ -217,62 +222,36 @@ const teas = {
 
                 'sources' : ['https://en.wikipedia.org/wiki/Konacha'],
             },
+
             "genmaicha" : {
-                'name' : '',
-                'altnames' : '',
-                'image' : '',
+                'name' : 'Genmaicha',
+                'altnames' : 'Brown Rice Tea, Popcorn Tea',
+                'image' : 'https://commons.wikimedia.org/wiki/File:Genmaicha.JPG#/media/File:Genmaicha.JPG',
                 
-                'origin' : '',
-                'caffeine' : '',
+                'origin' : 'Japan',
+                'caffeine' : '10mg',
 
-                'description' : '',
-                'colorDescription' : '',
-                'tasteDescription' : '',
+                'description' : 'A Japanese brown rice green tea consisting of green tea mixed with roasted popped brown rice.',
+                'colorDescription' : 'Light yellow-green',
+                'tasteDescription' : 'toasty, nutty',
 
-                'sources' : [''],
+                'sources' : ['https://en.wikipedia.org/wiki/Genmaicha'],
             },
+
             "hojicha" : {
-                'name' : '',
+                'name' : 'Hojicha',
                 'altnames' : '',
-                'image' : '',
+                'image' : 'https://commons.wikimedia.org/wiki/File:Houjicha.jpg#/media/File:Houjicha.jpg',
                 
-                'origin' : '',
-                'caffeine' : '',
+                'origin' : 'Kyoto, Japan',
+                'caffeine' : '5-10mg',
 
-                'description' : '',
-                'colorDescription' : '',
-                'tasteDescription' : '',
+                'description' : 'A Japanese green tea that is roasted in a porcelain pot over charcoal',
+                'colorDescription' : 'distinctive clear red appearance',
+                'tasteDescription' : 'naturally sweet taste and smoky flavor with distinct notes of cocoa',
 
-                'sources' : [''],
+                'sources' : ['https://en.wikipedia.org/wiki/H%C5%8Djicha', 'https://hojicha.co/'],
             },
-            "fukamushi Sencha" : {
-                'name' : '',
-                'altnames' : '',
-                'image' : '',
-                
-                'origin' : '',
-                'caffeine' : '',
-
-                'description' : '',
-                'colorDescription' : '',
-                'tasteDescription' : '',
-
-                'sources' : [''],
-            },
-            "kabusecha" : {
-                'name' : '',
-                'altnames' : '',
-                'image' : '',
-                
-                'origin' : '',
-                'caffeine' : '',
-
-                'description' : '',
-                'colorDescription' : '',
-                'tasteDescription' : '',
-
-                'sources' : [''],
-            }
         }
     },
 
@@ -285,70 +264,224 @@ const teas = {
         'tasteDescription' : 'Similar to black tea, though varied oxidation levels results in widely varied tastes',
         'types' : {
             "dahongpao" : {
+                'name' : 'Da Hong Pao',
+                'altnames' : '',
+                'image' : 'https://commons.wikimedia.org/wiki/File:Da_Hong_Pao_Oolong_tea_leaf.jpg#/media/File:Da_Hong_Pao_Oolong_tea_leaf.jpg',
+                
+                'origin' : 'China',
+                'caffeine' : '20-30mg',
 
+                'description' : 'A Wuyi rock tea grown in the Wuyi Mountains of Fujian Province, China',
+                'colorDescription' : 'orange-yellow, bright and clear',
+                'tasteDescription' : 'peaty and earthy notes with hints of stone fruit, brown sugar, and molasses',
+
+                'sources' : ['https://en.wikipedia.org/wiki/Da_Hong_Pao'],
             },
+
             "shuijingui" : {
+                'name' : 'Shui Jin Gui',
+                'altnames' : 'Golden Water Turtle Tea',
+                'image' : 'https://commons.wikimedia.org/wiki/File:Shui_Jin_Gui_Oolong_tea_leaf.jpg#/media/File:Shui_Jin_Gui_Oolong_tea_leaf.jpg',
+                
+                'origin' : 'China',
+                'caffeine' : '20-30mg',
 
+                'description' : 'A Wuyi oolong tea from Mount Wuyi, Fujian, China',
+                'colorDescription' : 'bright green',
+                'tasteDescription' : 'sweet, floral',
+
+                'sources' : ['https://en.wikipedia.org/wiki/Shui_Jin_Gui_tea'],
             },
+
             "tieluohan" : {
+                'name' : 'Tieluohan',
+                'altnames' : 'Iron Arhat',
+                'image' : 'https://tea-api-boonaki.herokuapp.com/assets/tieluohan.jpg',
+                
+                'origin' : 'China',
+                'caffeine' : '20-30mg',
 
+                'description' : 'Grown on the cliffs of the Wuyi Mountains in China, Tieluohan is a light tea with high regards due to legends',
+                'colorDescription' : 'clear brown',
+                'tasteDescription' : 'strong robust taste with a little bitterness',
+
+                'sources' : ['https://en.wikipedia.org/wiki/Tieluohan_tea'],
             },
-            "Bai Jiguan" : {
 
+            "baijiguan" : {
+                'name' : 'Bai Jiguan',
+                'altnames' : 'White Rooster',
+                'image' : 'https://commons.wikimedia.org/wiki/File:Bai_Jiguan.jpg#/media/File:Bai_Jiguan.jpg',
+                
+                'origin' : 'China',
+                'caffeine' : '20-30mg',
+
+                'description' : 'A light Wuyi Mountain tea',
+                'colorDescription' : 'yellowish to light green',
+                'tasteDescription' : 'starts off sweet, uniquely fruity with a toasty floral honeyed aroma and finishes with a lingering mellow fruit and honey note',
+
+                'sources' : ['https://en.wikipedia.org/wiki/Bai_Jiguan_tea'],
             },
-            "Rougui" : {
 
+            "shuixian" : {
+                'name' : 'Shui Xian',
+                'altnames' : 'Water sprite, Sacred Lily',
+                'image' : 'https://commons.wikimedia.org/wiki/File:Shui_Xian.jpg#/media/File:Shui_Xian.jpg',
+                
+                'origin' : 'China',
+                'caffeine' : '10-20mg',
+
+                'description' : 'Heavy Wuyi tea, the darkest of the dark oolongs from Wuyi.',
+                'colorDescription' : 'Deep amber',
+                'tasteDescription' : 'Mellow and delicate, the liquid is rich and complicated, with lingering fragrance in mouth',
+
+                'sources' : ['https://en.wikipedia.org/wiki/Shui_Xian'],
             },
-            "Shui Xian" : {
 
+            "tieguanyin" : {
+                'name' : 'Tieguanyin',
+                'altnames' : 'iron Goddess, Iron Guanyin',
+                'image' : 'https://commons.wikimedia.org/wiki/File:Tieguanyin2.jpg#/media/File:Tieguanyin2.jpg',
+                
+                'origin' : 'China',
+                'caffeine' : '12-14mg',
+
+                'description' : 'A variety of oolong tea that was originated during the 19th century',
+                'colorDescription' : 'bright emerald to bright yellow',
+                'tasteDescription' : 'roasted, nutty, creamy, fruity, toasty, honey, floral, fresh, vegetal and mineral',
+
+                'sources' : ['https://en.wikipedia.org/wiki/Tieguanyin', 'https://www.puretaiwantea.com/health-benefits-of-tieguanyin-tea'],
             },
-            "Tieguanyin" : {
 
+            "huangjingui" : {
+                'name' : 'Huangjin Gui',
+                'altnames' : 'Golden Osmanthus, Golden Cassia',
+                'image' : 'https://commons.wikimedia.org/wiki/File:Huang_Jin_Gui_Tea.jpeg#/media/File:Huang_Jin_Gui_Tea.jpeg',
+                
+                'origin' : 'China',
+                'caffeine' : '0',
+
+                'description' : 'A premium variety of Chinese oolong tea named after the yellow golden color of its budding leaves and its unique flowery aroma',
+                'colorDescription' : 'light yellow to light green',
+                'tasteDescription' : 'smooth sweet flavor with a rich slightly nutty after-taste',
+
+                'sources' : ['https://en.wikipedia.org/wiki/Huangjin_Gui'],
             },
-            "Huangjin Gui" : {
 
+            "dongding" : {
+                'name' : 'Dòng Dǐng',
+                'altnames' : 'Tung-ting',
+                'image' : 'https://commons.wikimedia.org/wiki/File:Dong_Ding_tea.jpg#/media/File:Dong_Ding_tea.jpg',
+                
+                'origin' : 'Taiwan',
+                'caffeine' : '50-60mg',
+
+                'description' : 'An oolong tea from Taiwan which translates to "Frozen Summit" or "Icy Peak", and is the name of the mountain in Taiwan where the tea is cultivated',
+                'colorDescription' : 'dark, army-green color with slight hints of brown',
+                'tasteDescription' : 'Conatins nutty notes, along with a smooth caramel-like flavor',
+
+                'sources' : ['https://en.wikipedia.org/wiki/Dong_Ding_tea'],
             },
-            "Dancong" : {
 
+            "dongfangmeiren" : {
+                'name' : 'Dongfang Meiren',
+                'altnames' : 'White-tip oolong',
+                'image' : 'https://commons.wikimedia.org/wiki/File:Dun-fan-mey-zhen-teashopby.jpg#/media/File:Dun-fan-mey-zhen-teashopby.jpg',
+                
+                'origin' : 'Taiwan',
+                'caffeine' : '50-90mg',
+
+                'description' : 'A heavily oxidized, non-roasted, tip-type oolong tea originating in Hsinchu County, Taiwan',
+                'colorDescription' : 'sweet-tasting ',
+                'tasteDescription' : 'bright reddish-orange',
+
+                'sources' : ['https://en.wikipedia.org/wiki/Dongfang_meiren'],
             },
-            "Dongding" : {
 
+            "baozhong" : {
+                'name' : 'Baozhong',
+                'altnames' : 'Pouchong',
+                'image' : 'https://commons.wikimedia.org/wiki/File:Spring_pouchong_tea_leaves_on_plate.jpg#/media/File:Spring_pouchong_tea_leaves_on_plate.jpg',
+                
+                'origin' : 'China',
+                'caffeine' : '20-30mg',
+
+                'description' : 'A lightly oxidized tea, twist shape, with floral notes, and usually not roasted',
+                'colorDescription' : 'mix of pale honey yellow and jade green, bright in color, and clear',
+                'tasteDescription' : 'grassy, floral notes and the taste of creamy green melon.',
+
+                'sources' : ['https://en.wikipedia.org/wiki/Baozhong_tea'],
             },
-            "Dongfang Meiren" : {
 
-            },
-            "Alishan" : {
+            "ruanzhi" : {
+                'name' : 'Ruan Zhi Oolong',
+                'altnames' : '',
+                'image' : 'https://tea-api-boonaki.herokuapp.com/assets/ruanzhi.jpg',
+                
+                'origin' : 'Taiwan',
+                'caffeine' : '50-90mg*',
 
-            },
-            "Lishan" : {
+                'description' : 'Ruan Zhi, or "soft stem", is a variety of oolong tea developed by the Taiwan Tea Experiment Station ',
+                'colorDescription' : 'light amber',
+                'tasteDescription' : 'oily flowery taste, with cherry tones.',
 
-            },
-            "Baozhong" : {
-
-            },
-            "Ruan Zhi" : {
-
+                'sources' : ['https://teapedia.org/en/Ruan_Zhi'],
             },
             "Jin Xuan" : {
+                'name' : '',
+                'altnames' : '',
+                'image' : '',
+                
+                'origin' : '',
+                'caffeine' : '',
 
+                'description' : '',
+                'colorDescription' : '',
+                'tasteDescription' : '',
+
+                'sources' : [''],
             },
             "Black Oolong" : {
+                'name' : '',
+                'altnames' : '',
+                'image' : '',
                 
-            },
-            "High mountain" : {
+                'origin' : '',
+                'caffeine' : '',
 
-            },
-            "Tieguanyin" : {
+                'description' : '',
+                'colorDescription' : '',
+                'tasteDescription' : '',
 
-            },
-            "Darjeeling" : {
-
+                'sources' : [''],  
             },
             "Assam Smoked Oolong" : {
+                'name' : '',
+                'altnames' : '',
+                'image' : '',
+                
+                'origin' : '',
+                'caffeine' : '',
 
+                'description' : '',
+                'colorDescription' : '',
+                'tasteDescription' : '',
+
+                'sources' : [''],
             },
             "Vietnamese Oolong" : {
+                'name' : '',
+                'altnames' : '',
+                'image' : '',
+                
+                'origin' : '',
+                'caffeine' : '',
 
+                'description' : '',
+                'colorDescription' : '',
+                'tasteDescription' : '',
+
+                'sources' : [''],
             }
 
         },
@@ -363,31 +496,130 @@ const teas = {
         'tasteDescription' : 'floral, fresh, fruity, with a hint of cucumber or melon.',
         'types' : {
             "Bai Hao Yin Zhen" : {
+                'name' : '',
+                'altnames' : '',
+                'image' : '',
+                
+                'origin' : '',
+                'caffeine' : '',
 
+                'description' : '',
+                'colorDescription' : '',
+                'tasteDescription' : '',
+
+                'sources' : [''],
             },
             "Bai Mu Dan" : {
+                'name' : '',
+                'altnames' : '',
+                'image' : '',
+                
+                'origin' : '',
+                'caffeine' : '',
 
+                'description' : '',
+                'colorDescription' : '',
+                'tasteDescription' : '',
+
+                'sources' : [''],
             },
             "Shou Mei" : {
+                'name' : '',
+                'altnames' : '',
+                'image' : '',
+                
+                'origin' : '',
+                'caffeine' : '',
 
+                'description' : '',
+                'colorDescription' : '',
+                'tasteDescription' : '',
+
+                'sources' : [''],
             },
             "Jasmine Dragon Pearl" : {
+                'name' : '',
+                'altnames' : '',
+                'image' : '',
+                
+                'origin' : '',
+                'caffeine' : '',
 
+                'description' : '',
+                'colorDescription' : '',
+                'tasteDescription' : '',
+
+                'sources' : [''],
             },
             "White Tea Cake" : {
+                'name' : '',
+                'altnames' : '',
+                'image' : '',
+                
+                'origin' : '',
+                'caffeine' : '',
 
+                'description' : '',
+                'colorDescription' : '',
+                'tasteDescription' : '',
+
+                'sources' : [''],
             },
             "Snow Buds/Phoenix Eye" : {
+                'name' : '',
+                'altnames' : '',
+                'image' : '',
+                
+                'origin' : '',
+                'caffeine' : '',
 
+                'description' : '',
+                'colorDescription' : '',
+                'tasteDescription' : '',
+
+                'sources' : [''],
             },
             "Jade Pillar" : {
+                'name' : '',
+                'altnames' : '',
+                'image' : '',
+                
+                'origin' : '',
+                'caffeine' : '',
 
+                'description' : '',
+                'colorDescription' : '',
+                'tasteDescription' : '',
+
+                'sources' : [''],
             },
             "Malawi Satemwa Antlers" : {
+                'name' : '',
+                'altnames' : '',
+                'image' : '',
+                
+                'origin' : '',
+                'caffeine' : '',
 
+                'description' : '',
+                'colorDescription' : '',
+                'tasteDescription' : '',
+
+                'sources' : [''],
             },
             "White Darjeeling" : {
+                'name' : '',
+                'altnames' : '',
+                'image' : '',
+                
+                'origin' : '',
+                'caffeine' : '',
 
+                'description' : '',
+                'colorDescription' : '',
+                'tasteDescription' : '',
+
+                'sources' : [''],
             }
         }
     },
@@ -428,63 +660,108 @@ const teas = {
         "englishbreakfast" : {
             'name' : 'English Breakfast',
             'altnames' : '',
+            'image' : '',
+                
+            'origin' : '',
+            'caffeine' : '',
+            'mainIngredients' : '',
+
+            'description' : '',
+            'colorDescription' : '',
+            'tasteDescription' : '',
+
+            'sources' : [''],
         },
         "englishafternoon" : {
             'name' : 'English Afternoon',
             'altnames' : '',
+            'image' : '',
+                
+            'origin' : '',
+            'caffeine' : '',
+            'mainIngredients' : '',
+
+            'description' : '',
+            'colorDescription' : '',
+            'tasteDescription' : '',
+
+            'sources' : [''],
         },
         "irishbreakfast" : {
             'name' : 'Irish Breakfast',
             'altnames' : '',
+            'image' : '',
+                
+            'origin' : '',
+            'caffeine' : '',
+            'mainIngredients' : '',
+
+            'description' : '',
+            'colorDescription' : '',
+            'tasteDescription' : '',
+
+            'sources' : [''],
         },
         "masalachai" : {
             'name' : 'Masala Chai',
             'altnames' : '',
+            'image' : '',
+                
+            'origin' : '',
+            'caffeine' : '',
+            'mainIngredients' : '',
+
+            'description' : '',
+            'colorDescription' : '',
+            'tasteDescription' : '',
+
+            'sources' : [''],
         },
         "russiancaravan" : {
             'name' : 'Russian Caravan',
             'altnames' : '',
+            'image' : '',
+                
+            'origin' : '',
+            'caffeine' : '',
+            'mainIngredients' : '',
+
+            'description' : '',
+            'colorDescription' : '',
+            'tasteDescription' : '',
+
+            'sources' : [''],
         },
         "lycheeblackTea" : {
             'name' : 'Lychee Black Tea',
             'altnames' : '',
-        },
-        "sencha" : {
+            'image' : '',
+                
+            'origin' : '',
+            'caffeine' : '',
+            'mainIngredients' : '',
 
-        },
-        "matcha" : {
+            'description' : '',
+            'colorDescription' : '',
+            'tasteDescription' : '',
 
-        },
-        "shincha" : {
-
-        },
-        "bancha" : {
-
-        },
-        "gyokuro" : {
-
-        },
-        "kukicha" : {
-
-        },
-        "tencha" : {
-
-        },
-        "konacha" : {
-
+            'sources' : [''],
         },
         "genmaicha" : {
+            'name' : 'Genmaicha',
+            'altnames' : 'Brown Rice Tea, Popcorn Tea',
+            'image' : 'https://commons.wikimedia.org/wiki/File:Genmaicha.JPG#/media/File:Genmaicha.JPG',
+            
+            'origin' : 'Japan',
+            'caffeine' : '10mg',
+            'mainIngredients' : 'Green Tea, Brown Rice',
 
+            'description' : 'A Japanese brown rice green tea consisting of green tea mixed with roasted popped brown rice.',
+            'colorDescription' : '',
+            'tasteDescription' : '',
+
+            'sources' : ['https://en.wikipedia.org/wiki/Genmaicha'],
         },
-        "hojicha" : {
-
-        },
-        "fukamushi Sencha" : {
-
-        },
-        "kabusecha" : {
-
-        }
     },
 
     // 'yellow' : {
