@@ -30,7 +30,8 @@ This is a free tea database that gives simple information about various teas and
 <p>To query the database for individual teas, use the url: https://tea-api-boonaki.herokuapp.com/api/teas/[teaname]</p>
 
 <p>All specified endpoints will return an object</p>
-<p>For example: the url: https://tea-api-boonaki.herokuapp.com/api/teas/earlgrey </br> will return the following object</p>
+
+**For example:** https://tea-api-boonaki.herokuapp.com/api/teas/earlgrey will return the following object:
      
 ```
 "earlgrey" : {
