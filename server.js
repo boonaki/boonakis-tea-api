@@ -1,10 +1,12 @@
 const express = require('express')
 const app = express()
 const cors = require('cors')
-const teas = require(__dirname + '/teadata.js')
+const teaData = require(__dirname + '/teadata.js')
+
+const teas = teaData.teas
+const allTeas = teaData.all
 
 app.use(cors())
-app.use(express.static('public'))
 app.use('/assets', express.static('assets'));
 
 const PORT = process.env.PORT || 8000
@@ -16,8 +18,6 @@ If tea is a blend, include disclaimer that original type is only included in the
 https://tea-api-boonaki.herokuapp.com/
 */
 
-
-
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
 })
@@ -27,7 +27,9 @@ app.get('/api/teas', (req,res) => {
 })
 
 app.get('/api/teas/:name', (req,res) => {
-    let teaname = req.params.name.toLowerCase()
+    let teaname = req.params.name.split(' ').join('').toLowerCase()
+    console.log(teas)
+    
     if(teas[teaname]){
         res.json(teas[teaname])
     }else{
