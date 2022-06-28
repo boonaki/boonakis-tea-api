@@ -579,122 +579,99 @@ const teas = {
     
             'sources' : ['https://en.wikipedia.org/wiki/Lady_Grey_(tea)'],
         },
+
         "englishbreakfast" : {
-            'name' : 'English Breakfast',
-            'altnames' : '',
-            'image' : '',
+            'name' : 'English Breakfast tea',
+            'altnames' : 'Breakfast tea',
+            'image' : 'https://commons.wikimedia.org/wiki/File:English_breakfast_tea_tin.jpg#/media/File:English_breakfast_tea_tin.jpg',
                 
-            'origin' : '',
-            'caffeine' : '',
-            'mainIngredients' : '',
+            'origin' : 'UK',
+            'caffeine' : '60-100mg',
+            'mainIngredients' : 'Black tea (varied)',
 
-            'description' : '',
-            'colorDescription' : '',
-            'tasteDescription' : '',
+            'description' : 'a traditional blend of black teas from Assam, Ceylon, Keemun and Kenyan teas.',
+            'colorDescription' : 'Deep amber',
+            'tasteDescription' : 'may be slightly sweet, bitter, or malty',
 
-            'sources' : [''],
+            'sources' : ['https://en.wikipedia.org/wiki/English_breakfast_tea'],
         },
-        "englishafternoon" : {
-            'name' : 'English Afternoon',
-            'altnames' : '',
-            'image' : '',
-                
-            'origin' : '',
-            'caffeine' : '',
-            'mainIngredients' : '',
 
-            'description' : '',
-            'colorDescription' : '',
-            'tasteDescription' : '',
-
-            'sources' : [''],
-        },
         "irishbreakfast" : {
             'name' : 'Irish Breakfast',
             'altnames' : '',
-            'image' : '',
+            'image' : 'https://commons.wikimedia.org/wiki/File:Milk_in_Irish_Breakfast_tea.jpg#/media/File:Milk_in_Irish_Breakfast_tea.jpg',
                 
-            'origin' : '',
-            'caffeine' : '',
-            'mainIngredients' : '',
+            'origin' : 'UK',
+            'caffeine' : '60-100mg',
+            'mainIngredients' : 'Black tea (varied)',
 
-            'description' : '',
-            'colorDescription' : '',
-            'tasteDescription' : '',
+            'description' : 'A traditional blend of black teas from Assam and Ceylon teas. Because of its strength, it is most commonly served with milk.',
+            'colorDescription' : 'Red, deep amber',
+            'tasteDescription' : 'Strong, malty, robust',
 
-            'sources' : [''],
+            'sources' : ['https://en.wikipedia.org/wiki/Irish_breakfast_tea'],
         },
+
         "masalachai" : {
             'name' : 'Masala Chai',
-            'altnames' : '',
-            'image' : '',
+            'altnames' : 'Spiced tea',
+            'image' : 'https://commons.wikimedia.org/wiki/File:Contents_of_a_bag_of_chai_tea.jpg#/media/File:Contents_of_a_bag_of_chai_tea.jpg',
                 
-            'origin' : '',
-            'caffeine' : '',
-            'mainIngredients' : '',
+            'origin' : 'India',
+            'caffeine' : '40-50mg',
+            'mainIngredients' : 'Assam tea, sugar, cardamom, black pepper, and ginger.',
 
-            'description' : '',
-            'colorDescription' : '',
-            'tasteDescription' : '',
+            'description' : 'An Indian tea beverage made by boiling black tea in milk and water with a mixture of aromatic herbs and spices',
+            'colorDescription' : 'brown, beige',
+            'tasteDescription' : 'fragrant, spiced, astringent and a strong flavor',
 
-            'sources' : [''],
+            'sources' : ['https://en.wikipedia.org/wiki/Masala_chai'],
         },
+
         "russiancaravan" : {
             'name' : 'Russian Caravan',
             'altnames' : '',
-            'image' : '',
+            'image' : 'https://tea-api-boonaki.herokuapp.com/assets/russiancaravan.jpg',
                 
-            'origin' : '',
-            'caffeine' : '',
-            'mainIngredients' : '',
+            'origin' : 'China',
+            'caffeine' : '20-60mg',
+            'mainIngredients' : 'Oolong tea, keemun tea, lapsang souchong tea',
 
-            'description' : '',
-            'colorDescription' : '',
-            'tasteDescription' : '',
+            'description' : 'A chinese tea blended with various oolong and black teas that gets its name from tea trading through a traderoute that connected eastern Asia to Europe through Russia',
+            'colorDescription' : 'Red, deep orange',
+            'tasteDescription' : 'sweet, malty, and smoky taste',
 
-            'sources' : [''],
+            'sources' : ['https://en.wikipedia.org/wiki/Russian_Caravan'],
         },
-        "lycheeblackTea" : {
-            'name' : 'Lychee Black Tea',
-            'altnames' : '',
-            'image' : '',
-                
-            'origin' : '',
-            'caffeine' : '',
-            'mainIngredients' : '',
 
-            'description' : '',
-            'colorDescription' : '',
-            'tasteDescription' : '',
-
-            'sources' : [''],
-        },
         "genmaicha" : {
-            'name' : 'Genmaicha',
-            'altnames' : 'Brown Rice Tea, Popcorn Tea',
-            'image' : 'https://commons.wikimedia.org/wiki/File:Genmaicha.JPG#/media/File:Genmaicha.JPG',
-            
-            'origin' : 'Japan',
-            'caffeine' : '10mg',
-            'mainIngredients' : 'Green Tea, Brown Rice',
+                'name' : 'Genmaicha',
+                'altnames' : 'Brown Rice Tea, Popcorn Tea',
+                'image' : 'https://commons.wikimedia.org/wiki/File:Genmaicha.JPG#/media/File:Genmaicha.JPG',
+                
+                'origin' : 'Japan',
+                'caffeine' : '10mg',
+                'mainIngredients' : 'Green tea, brown rice',
 
-            'description' : 'A Japanese brown rice green tea consisting of green tea mixed with roasted popped brown rice.',
-            'colorDescription' : '',
-            'tasteDescription' : '',
+                'description' : 'A Japanese brown rice green tea consisting of green tea mixed with roasted popped brown rice.',
+                'colorDescription' : 'light yellow-green',
+                'tasteDescription' : 'toasty, nutty',
 
-            'sources' : ['https://en.wikipedia.org/wiki/Genmaicha'],
+                'sources' : ['https://en.wikipedia.org/wiki/Genmaicha'],
         },
+
         "jasminedragonpearl" : {
             'name' : 'Jasmine Dragon Pearl',
             'altnames' : '',
-            'image' : '',
+            'image' : 'https://tea-api-boonaki.herokuapp.com/assets/jasminedragon.jpg',
             
-            'origin' : '',
-            'caffeine' : '',
+            'origin' : 'China',
+            'caffeine' : '10-20mg',
+            'mainIngredients' : 'Green tea, white tea, jasmine flowers',
 
-            'description' : '',
-            'colorDescription' : '',
-            'tasteDescription' : '',
+            'description' : 'Dragon Pearl Jasmine is comprised of little, hand-rolled pearls gently infused with jasmine flowers',
+            'colorDescription' : 'clear light yellow',
+            'tasteDescription' : 'Jasmine, root beer, sweet, but yet a light/subtle feeling.',
 
             'sources' : [''],
         },
