@@ -540,6 +540,7 @@ const unorganizedTeas = {
 
         'sources' : [''],
     },
+
     "ladygrey" : {
         'name' : 'Lady Grey',
         'altnames' : '',
@@ -658,6 +659,23 @@ const unorganizedTeas = {
 
         'sources' : [''],
     },
+    "earlgrey" : {
+        'name' : 'Earl Grey',
+        'altnames' : '',
+        'image' : 'https://commons.wikimedia.org/wiki/File:Earl_Grey_Tea.jpg#/media/File:Earl_Grey_Tea.jpg',
+        
+        'origin' : 'UK*',
+        'type' : 'blend',
+        'caffeine' : '40-120',
+        'mainIngredients' : 'Black Tea, Oil of Bergamot',
+
+        'description' : 'A tea blend which has been flavoured with oil of bergamot',
+        'colorDescription' : 'Amber, deep orange',
+        'tasteDescription' : 'smoky, earthy, spicy, nutty, citrus, caramel, leather, fruity, and honey',
+
+        'sources' : ['https://en.wikipedia.org/wiki/Earl_Grey_tea'],
+    },
+    
 }
 
 
