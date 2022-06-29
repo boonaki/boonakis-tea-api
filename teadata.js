@@ -156,11 +156,10 @@ const unorganizedTeas = {
         'origin' : 'Japan',
         'type' : 'green',
         'caffeine' : '~10mg',
-
+        'caffeineLevel' : 'very low',
         'description' : 'Tea that is harvested from the same tea tree as sencha grade, but it is plucked later than sencha is. Can be found in a number of forms such as roasted, unroasted, smoked, etc.',
         'colorDescription' : 'light green to green-orange',
         'tasteDescription' : 'mild, earthy grassiness, with dry, toasty notes with less of a deeply vegetal, umami flavo',
-
         'sources' : ['https://en.wikipedia.org/wiki/Bancha'],
     },
 
@@ -783,60 +782,53 @@ const organizedTeas = {
             "sencha" : {
                 'name' : 'Sencha Tea',
                 'altnames' : 'Steeped Tea',
-                'image' : 'https://commons.wikimedia.org/wiki/File:2017_Kagoshima_sencha.jpg#/media/File:2017_Kagoshima_sencha.jpg',
-                
+                'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/2017_Kagoshima_sencha.jpg/1024px-2017_Kagoshima_sencha.jpg?20170624211809',
                 'origin' : 'Japan',
                 'type' : 'green',
                 'caffeine' : '20-40mg',
-
+                'caffeineLevel' : 'low',
                 'description' : 'A Japanese green tea prepared by infusing whole tea leaves in hot water.',
-                'colorDescription' : 'Light green',
+                'colorDescription' : 'light green',
                 'tasteDescription' : 'fresh, herbal, or grassy flavor, which can have varying vegetal grassy notes depending on how long it is steeped.',
-
                 'sources' : ['https://en.wikipedia.org/wiki/Sencha'],
             },
-
+        
             "matcha" : {
                 'name' : 'Matcha Tea',
                 'altnames' : '',
-                'image' : 'https://commons.wikimedia.org/wiki/File:Matcha_Scoop.jpg#/media/File:Matcha_Scoop.jpg',
-                
+                'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Matcha_Scoop.jpg/1024px-Matcha_Scoop.jpg?20190105233506',
                 'origin' : 'China',
                 'type' : 'green',
                 'caffeine' : '20-90mg',
-
+                'caffeineLevel' : 'moderate',
                 'description' : 'A finely ground powder of specially grown and processed green tea leaves, traditionally consumed in East Asia.',
-                'colorDescription' : 'Green, dark green',
+                'colorDescription' : 'green, dark green',
                 'tasteDescription' : 'vegetal grassy notes, natural sweet nuttiness, a touch of bitterness with a pleasant savory ending',
-
                 'sources' : ['https://en.wikipedia.org/wiki/Matcha'],
             },
-
+        
             "bancha" : {
                 'name' : 'Bancha',
                 'altnames' : '',
-                'image' : 'https://commons.wikimedia.org/wiki/File:Shizuoka_bancha.jpg#/media/File:Shizuoka_bancha.jpg',
-                
+                'image' : 'https://upload.wikimedia.org/wikipedia/commons/d/dd/Shizuoka_bancha.jpg',
                 'origin' : 'Japan',
                 'type' : 'green',
                 'caffeine' : '~10mg',
-
+                'caffeineLevel' : 'very low',
                 'description' : 'Tea that is harvested from the same tea tree as sencha grade, but it is plucked later than sencha is. Can be found in a number of forms such as roasted, unroasted, smoked, etc.',
-                'colorDescription' : 'Light green to green-orange',
+                'colorDescription' : 'light green to green-orange',
                 'tasteDescription' : 'mild, earthy grassiness, with dry, toasty notes with less of a deeply vegetal, umami flavo',
-
                 'sources' : ['https://en.wikipedia.org/wiki/Bancha'],
             },
 
             "gyokuro" : {
                 'name' : 'Gyokuro',
                 'altnames' : 'Jade Dew, Pearl Dew',
-                'image' : 'https://commons.wikimedia.org/wiki/File:Gyokuro_img_0067.jpg#/media/File:Gyokuro_img_0067.jpg',
-                
+                'image' : 'https://upload.wikimedia.org/wikipedia/commons/e/e0/Gyokuro_img_0067.jpg',
                 'origin' : 'Japan',
                 'type' : 'green',
                 'caffeine' : '~35mg',
-
+                'caffeineLevel' : 'low',
                 'description' : 'A type of shaded green tea from Japan. It differs from the standard sencha (a classic unshaded green tea) in being grown under the shade rather than the full sun.',
                 'colorDescription' : 'ranging from light green to dark green',
                 'tasteDescription' : 'very full-bodied, with a taste reminiscent to seaweed and grasses, followed by an intense sweetness',
