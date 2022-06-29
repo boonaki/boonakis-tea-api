@@ -38,7 +38,7 @@ This is a free tea database that gives simple information about various teas and
 "earlgrey" : {
     'name' : 'Earl Grey',
     'altnames' : '',
-    'image' : '*image-url*',
+    'image' : '(image-url)',
     'origin' : 'UK*',
     'type' : 'blend',
     'caffeine' : '40-120mg',
