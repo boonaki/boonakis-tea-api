@@ -5,7 +5,7 @@ NOTE: not every tea known to man is in this database
 https://tea-api-boonaki.herokuapp.com/
 */
 
-//caffeine levels: none, very low, low, moderate, high, very high
+//caffeine levels: none, very low, low, moderate, high, very high ,varied
 /***********************************
 /***** ALL TEAS *****/
 
@@ -824,7 +824,7 @@ const organizedTeas = {
             "gyokuro" : {
                 'name' : 'Gyokuro',
                 'altnames' : 'Jade Dew, Pearl Dew',
-                'image' : 'https://upload.wikimedia.org/wikipedia/commons/e/e0/Gyokuro_img_0067.jpg',
+                'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Gyokuro_img_0067.jpg/480px-Gyokuro_img_0067.jpg',
                 'origin' : 'Japan',
                 'type' : 'green',
                 'caffeine' : '~35mg',
@@ -832,71 +832,62 @@ const organizedTeas = {
                 'description' : 'A type of shaded green tea from Japan. It differs from the standard sencha (a classic unshaded green tea) in being grown under the shade rather than the full sun.',
                 'colorDescription' : 'ranging from light green to dark green',
                 'tasteDescription' : 'very full-bodied, with a taste reminiscent to seaweed and grasses, followed by an intense sweetness',
-
                 'sources' : ['https://en.wikipedia.org/wiki/Gyokuro'],
             },
 
             "kukicha" : {
                 'name' : 'Kukicha',
                 'altnames' : 'Bōcha, Twig tea, Stalk tea',
-                'image' : 'https://commons.wikimedia.org/wiki/File:Kukicha.jpg#/media/File:Kukicha.jpg',
-                
+                'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Kukicha.jpg/480px-Kukicha.jpg',
                 'origin' : 'Japan',
                 'type' : 'green',
                 'caffeine' : '1-5mg',
-
+                'caffeineLevel' : 'very low',
                 'description' : 'A Japanese blend made of stems, stalks, and twigs. It is available as a green tea or in more oxidised processing',
                 'colorDescription' : 'very pale, yellow-green,',
                 'tasteDescription' : 'mildly nutty and slightly creamy sweet flavour',
-
                 'sources' : ['https://en.wikipedia.org/wiki/Kukicha'],
             },
 
             "konacha" : {
                 'name' : 'Konacha',
                 'altnames' : 'Gyokurokonacha',
-                'image' : 'https://commons.wikimedia.org/wiki/File:Konacha.jpg#/media/File:Konacha.jpg',
-                
+                'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Konacha.jpg/640px-Konacha.jpg',
                 'origin' : 'Japan',
                 'type' : 'green',
-                'caffeine' : 'varied based on plant growth',
-
+                'caffeine' : 'based on plant growth',
+                'caffeineLevel' : 'varied',
                 'description' : 'A type of green tea, composed of the dust, tea buds and small leaves that are left behind after processing Gyokuro or Sencha',
                 'colorDescription' : 'intense green, deep green',
                 'tasteDescription' : 'mild, sweet, and grassy flavor with bitter after taste',
-
                 'sources' : ['https://en.wikipedia.org/wiki/Konacha'],
             },
 
             "genmaicha" : {
                 'name' : 'Genmaicha',
                 'altnames' : 'Brown Rice Tea, Popcorn Tea',
-                'image' : 'https://commons.wikimedia.org/wiki/File:Genmaicha.JPG#/media/File:Genmaicha.JPG',
-                
+                'image' : 'https://upload.wikimedia.org/wikipedia/commons/7/74/Genmaicha.JPG',
                 'origin' : 'Japan',
                 'type' : 'green',
                 'caffeine' : '10mg',
-
+                'caffeineLevel' : 'low',
                 'description' : 'A Japanese brown rice green tea consisting of green tea mixed with roasted popped brown rice.',
                 'colorDescription' : 'Light yellow-green',
                 'tasteDescription' : 'toasty, nutty',
-
                 'sources' : ['https://en.wikipedia.org/wiki/Genmaicha'],
             },
 
             "hojicha" : {
                 'name' : 'Hojicha',
                 'altnames' : '',
-                'image' : 'https://commons.wikimedia.org/wiki/File:Houjicha.jpg#/media/File:Houjicha.jpg',
-                
+                'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Houjicha.jpg/360px-Houjicha.jpg',
                 'origin' : 'Kyoto, Japan',
                 'type' : 'green',
                 'caffeine' : '5-10mg',
-
+                'caffeineLevel' : 'very low',
                 'description' : 'A Japanese green tea that is roasted in a porcelain pot over charcoal',
                 'colorDescription' : 'distinctive clear red appearance',
                 'tasteDescription' : 'naturally sweet taste and smoky flavor with distinct notes of cocoa',
-
                 'sources' : ['https://en.wikipedia.org/wiki/H%C5%8Djicha', 'https://hojicha.co/'],
             },
         }
