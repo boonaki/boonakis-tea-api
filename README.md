@@ -38,17 +38,15 @@ This is a free tea database that gives simple information about various teas and
 "earlgrey" : {
     'name' : 'Earl Grey',
     'altnames' : '',
-    'image' : 'https://commons.wikimedia.org/wiki/File:Earl_Grey_Tea.jpg#/media/File:Earl_Grey_Tea.jpg',
-        
+    'image' : '*image-url*',
     'origin' : 'UK*',
     'type' : 'blend',
-    'caffeine' : '40-120',
-    'mainIngredients' : 'Black Tea, Oil of Bergamot',
-
+    'caffeine' : '40-120mg',
+    'caffeineLevel' : 'very high',
+    'mainIngredients' : 'black tea, oil of bergamot',
     'description' : 'A tea blend which has been flavoured with oil of bergamot',
-    'colorDescription' : 'Amber, deep orange',
+    'colorDescription' : 'amber, deep orange',
     'tasteDescription' : 'smoky, earthy, spicy, nutty, citrus, caramel, leather, fruity, and honey',
-
     'sources' : ['https://en.wikipedia.org/wiki/Earl_Grey_tea'],
 },
 ```
