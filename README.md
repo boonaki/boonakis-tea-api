@@ -13,6 +13,7 @@ This is a free tea database that gives simple information about various teas and
 - Origin
 - Image
 - Caffeiene Content (per 1 cup/8floz)
+- Caffeine Levels (none/very low/low/moderate/high/very high/varied)
 - Type or types
 - Quick description
 - Taste description
