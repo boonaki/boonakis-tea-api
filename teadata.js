@@ -205,20 +205,6 @@ const unorganizedTeas = {
         'sources' : ['https://en.wikipedia.org/wiki/Konacha'],
     },
 
-    "genmaicha" : {
-        'name' : 'Genmaicha',
-        'altnames' : 'Brown Rice Tea, Popcorn Tea',
-        'image' : 'https://upload.wikimedia.org/wikipedia/commons/7/74/Genmaicha.JPG',
-        'origin' : 'Japan',
-        'type' : 'green',
-        'caffeine' : '10mg',
-        'caffeineLevel' : 'low',
-        'description' : 'A Japanese brown rice green tea consisting of green tea mixed with roasted popped brown rice.',
-        'colorDescription' : 'Light yellow-green',
-        'tasteDescription' : 'toasty, nutty',
-        'sources' : ['https://en.wikipedia.org/wiki/Genmaicha'],
-    },
-
     "hojicha" : {
         'name' : 'Hojicha',
         'altnames' : '',
@@ -232,7 +218,7 @@ const unorganizedTeas = {
         'tasteDescription' : 'naturally sweet taste and smoky flavor with distinct notes of cocoa',
         'sources' : ['https://en.wikipedia.org/wiki/H%C5%8Djicha', 'https://hojicha.co/'],
     },
-    
+
     "dahongpao" : {
         'name' : 'Da Hong Pao',
         'altnames' : '',
@@ -418,48 +404,42 @@ const unorganizedTeas = {
     "baihaoyinzhen" : {
         'name' : 'Baihoi Yinzhen',
         'altnames' : 'Silder Needle, Yinzhen',
-        'image' : 'https://commons.wikimedia.org/wiki/File:2010_FirstFlush_Yunnan_Baihao_Yinzhen.jpg#/media/File:2010_FirstFlush_Yunnan_Baihao_Yinzhen.jpg',
-        
+        'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/2010_FirstFlush_Yunnan_Baihao_Yinzhen.jpg/640px-2010_FirstFlush_Yunnan_Baihao_Yinzhen.jpg',                
         'origin' : 'China',
         'type' : 'white',
         'caffeine' : '0-5mg',
-
+        'caffeineLevel' : 'very low',
         'description' : 'A white tea made from only the top buds of the Camellia sinensis plant.',
         'colorDescription' : 'light orange, light yellow',
         'tasteDescription' : 'sweet, vegetal, and delicate',
-
         'sources' : ['https://en.wikipedia.org/wiki/Baihao_Yinzhen'],
     },
 
     "baimudan" : {
         'name' : 'Baimudan tea',
         'altnames' : 'White Peony tea, Mudan White tea',
-        'image' : 'https://commons.wikimedia.org/wiki/File:Baimudan.JPG#/media/File:Baimudan.JPG',
-        
+        'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Baimudan.JPG/640px-Baimudan.JPG',               
         'origin' : 'China',
         'type' : 'white',
         'caffeine' : '15-30mg',
-
+        'caffeineLevel' : 'low',
         'description' : 'A type of white tea made from plucks each with one leaf shoot and two immediate young leaves (one bud two leaf ratio) of the Camellia sinensis plant.',
         'colorDescription' : 'golden yellow',
         'tasteDescription' : ' toasty, slightly sweet floral notes and a clean aftertaste.',
-
         'sources' : ['https://en.wikipedia.org/wiki/Baimudan_tea'],
     },
 
     "shoumei" : {
         'name' : 'Shoumei tea',
         'altnames' : 'Sow Mee',
-        'image' : 'https://commons.wikimedia.org/wiki/File:Shou_Mei_tea.JPG#/media/File:Shou_Mei_tea.JPG',
-        
+        'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Shou_Mei_tea.JPG/640px-Shou_Mei_tea.JPG',
         'origin' : 'China',
         'type' : 'white',
         'caffeine' : '15-30mg',
-
+        'caffeineLevel' : 'low',
         'description' : 'A type of white tea produced from naturally withered upper leafs and tips',
         'colorDescription' : 'darker green',
         'tasteDescription' : 'sweet, vegetal, delicate',
-
         'sources' : ['https://en.wikipedia.org/wiki/Shoumei_tea'],
     },
 
@@ -467,15 +447,13 @@ const unorganizedTeas = {
         'name' : 'Xue Ya',
         'altnames' : 'Snow Buds, Phoenix Eye',
         'image' : 'https://tea-api-boonaki.herokuapp.com/assets/xueya.jpg',
-        
         'origin' : 'China',
         'type' : 'white',
         'caffeine' : '15-30mg',
-
+        'caffeineLevel' : 'low',
         'description' : 'A complex white tea from Fuding in Fujian Province',
         'colorDescription' : 'light yellow',
         'tasteDescription' : 'smooth, juicy taste has clean notes of unripe fruits, light wood and just a touch of vegetal astringency.',
-
         'sources' : [''],
     },
 
@@ -483,83 +461,88 @@ const unorganizedTeas = {
         'name' : 'Satemwa Antlers',
         'altnames' : '',
         'image' : 'https://tea-api-boonaki.herokuapp.com/assets/satemwa-antlers.jpg',
-        
         'origin' : 'Malawi',
         'type' : 'white',
         'caffeine' : '10-25mg',
-
+        'caffeineLevel' : 'moderate',
         'description' : 'A white tea made from a blend of select Superior Cultivars from Malawi, making it rich in theanine and antioxidants.',
         'colorDescription' : 'golden yellow',
         'tasteDescription' : 'delicate sweetness of apricot and lychee lingers on the pallet',
-
         'sources' : [''],
+    },
+
+    "earlgrey" : {
+        'name' : 'Earl Grey',
+        'altnames' : '',
+        'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Earl_Grey_Tea.jpg/640px-Earl_Grey_Tea.jpg',
+        'origin' : 'UK*',
+        'type' : 'blend',
+        'caffeine' : '40-120',
+        'caffeineLevel' : 'very high',
+        'mainIngredients' : 'black tea, oil of bergamot',
+        'description' : 'A tea blend which has been flavoured with oil of bergamot',
+        'colorDescription' : 'amber, deep orange',
+        'tasteDescription' : 'smoky, earthy, spicy, nutty, citrus, caramel, leather, fruity, and honey',
+        'sources' : ['https://en.wikipedia.org/wiki/Earl_Grey_tea'],
     },
 
     "ladygrey" : {
         'name' : 'Lady Grey',
         'altnames' : '',
-        'image' : 'https://commons.wikimedia.org/wiki/File:TwiningsLadyGrey_low.jpg#/media/File:TwiningsLadyGrey_low.jpg',
-        
+        'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/TwiningsLadyGrey_low.jpg/640px-TwiningsLadyGrey_low.jpg',
         'origin' : 'UK*',
         'type' : 'blend',
         'caffeine' : '25-110mg',
-        'mainIngredients' : 'Black Tea, Oil of Bergamot, Lemon peel, Orange Peel',
-
+        'caffeineLevel' : 'high',
+        'mainIngredients' : 'black tea, oil of bergamot, lemon peel, orange Peel',
         'description' : 'Lady Grey tea is a trademarked variation on Earl Grey tea. Like Earl Grey, it is a black tea flavoured with bergamot essential oil.',
         'colorDescription' : 'lighter amber, orange',
         'tasteDescription' : '',
-
         'sources' : ['https://en.wikipedia.org/wiki/Lady_Grey_(tea)'],
     },
 
     "englishbreakfast" : {
         'name' : 'English Breakfast tea',
         'altnames' : 'Breakfast tea',
-        'image' : 'https://commons.wikimedia.org/wiki/File:English_breakfast_tea_tin.jpg#/media/File:English_breakfast_tea_tin.jpg',
-            
+        'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/English_breakfast_tea_tin.jpg/536px-English_breakfast_tea_tin.jpg',
         'origin' : 'UK',
         'type' : 'blend',
         'caffeine' : '60-100mg',
-        'mainIngredients' : 'Black tea (varied)',
-
+        'caffeineLevel' : 'very high',
+        'mainIngredients' : 'black tea (varied)',
         'description' : 'a traditional blend of black teas from Assam, Ceylon, Keemun and Kenyan teas.',
-        'colorDescription' : 'Deep amber',
+        'colorDescription' : 'deep amber',
         'tasteDescription' : 'may be slightly sweet, bitter, or malty',
-
         'sources' : ['https://en.wikipedia.org/wiki/English_breakfast_tea'],
     },
 
     "irishbreakfast" : {
         'name' : 'Irish Breakfast',
         'altnames' : '',
-        'image' : 'https://commons.wikimedia.org/wiki/File:Milk_in_Irish_Breakfast_tea.jpg#/media/File:Milk_in_Irish_Breakfast_tea.jpg',
-            
+        'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Milk_in_Irish_Breakfast_tea.jpg/480px-Milk_in_Irish_Breakfast_tea.jpg',
         'origin' : 'UK',
         'type' : 'blend',
         'caffeine' : '60-100mg',
-        'mainIngredients' : 'Black tea (varied)',
-
+        'caffeineLevel' : 'very high',
+        'mainIngredients' : 'black tea (varied)',
         'description' : 'A traditional blend of black teas from Assam and Ceylon teas. Because of its strength, it is most commonly served with milk.',
-        'colorDescription' : 'Red, deep amber',
+        'colorDescription' : 'red, deep amber',
         'tasteDescription' : 'Strong, malty, robust',
-
         'sources' : ['https://en.wikipedia.org/wiki/Irish_breakfast_tea'],
     },
 
     "masalachai" : {
         'name' : 'Masala Chai',
         'altnames' : 'Spiced tea',
-        'image' : 'https://commons.wikimedia.org/wiki/File:Contents_of_a_bag_of_chai_tea.jpg#/media/File:Contents_of_a_bag_of_chai_tea.jpg',
-            
+        'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Contents_of_a_bag_of_chai_tea.jpg/640px-Contents_of_a_bag_of_chai_tea.jpg',
         'origin' : 'India',
         'type' : 'blend',
         'caffeine' : '40-50mg',
-        'mainIngredients' : 'Assam tea, sugar, cardamom, black pepper, and ginger.',
-
+        'caffeineLevel' : 'high',
+        'mainIngredients' : 'assam tea, sugar, cardamom, black pepper, and ginger.',
         'description' : 'An Indian tea beverage made by boiling black tea in milk and water with a mixture of aromatic herbs and spices',
         'colorDescription' : 'brown, beige',
         'tasteDescription' : 'fragrant, spiced, astringent and a strong flavor',
-
         'sources' : ['https://en.wikipedia.org/wiki/Masala_chai'],
     },
 
@@ -567,67 +550,45 @@ const unorganizedTeas = {
         'name' : 'Russian Caravan',
         'altnames' : '',
         'image' : 'https://tea-api-boonaki.herokuapp.com/assets/russiancaravan.jpg',
-            
         'origin' : 'China',
         'type' : 'blend',
         'caffeine' : '20-60mg',
-        'mainIngredients' : 'Oolong tea, keemun tea, lapsang souchong tea',
-
+        'caffeineLevel' : 'high',
+        'mainIngredients' : 'oolong tea, keemun tea, lapsang souchong tea',
         'description' : 'A chinese tea blended with various oolong and black teas that gets its name from tea trading through a traderoute that connected eastern Asia to Europe through Russia',
-        'colorDescription' : 'Red, deep orange',
+        'colorDescription' : 'red, deep orange',
         'tasteDescription' : 'sweet, malty, and smoky taste',
-
         'sources' : ['https://en.wikipedia.org/wiki/Russian_Caravan'],
     },
 
     "genmaicha" : {
-            'name' : 'Genmaicha',
-            'altnames' : 'Brown Rice Tea, Popcorn Tea',
-            'image' : 'https://commons.wikimedia.org/wiki/File:Genmaicha.JPG#/media/File:Genmaicha.JPG',
-            
-            'origin' : 'Japan',
-            'type' : 'blend',
-            'caffeine' : '10mg',
-            'mainIngredients' : 'Green tea, brown rice',
-
-            'description' : 'A Japanese brown rice green tea consisting of green tea mixed with roasted popped brown rice.',
-            'colorDescription' : 'light yellow-green',
-            'tasteDescription' : 'toasty, nutty',
-
-            'sources' : ['https://en.wikipedia.org/wiki/Genmaicha'],
+        'name' : 'Genmaicha',
+        'altnames' : 'Brown Rice Tea, Popcorn Tea',
+        'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Genmaicha.JPG/640px-Genmaicha.JPG',
+        'origin' : 'Japan',
+        'type' : 'blend',
+        'caffeine' : '10mg',
+        'caffeineLevel' : 'low',
+        'mainIngredients' : 'green tea, brown rice',
+        'description' : 'A Japanese brown rice green tea consisting of green tea mixed with roasted popped brown rice.',
+        'colorDescription' : 'light yellow-green',
+        'tasteDescription' : 'toasty, nutty',
+        'sources' : ['https://en.wikipedia.org/wiki/Genmaicha'],
     },
 
     "jasminedragonpearl" : {
         'name' : 'Jasmine Dragon Pearl',
         'altnames' : '',
         'image' : 'https://tea-api-boonaki.herokuapp.com/assets/jasminedragon.jpg',
-        
         'origin' : 'China',
         'type' : 'blend',
         'caffeine' : '10-20mg',
-        'mainIngredients' : 'Green tea, white tea, jasmine flowers',
-
+        'caffeineLevel' : 'low',
+        'mainIngredients' : 'green tea, white tea, jasmine flowers',
         'description' : 'Dragon Pearl Jasmine is comprised of little, hand-rolled pearls gently infused with jasmine flowers',
         'colorDescription' : 'clear light yellow',
         'tasteDescription' : 'Jasmine, root beer, sweet, but yet a light/subtle feeling.',
-
         'sources' : [''],
-    },
-    "earlgrey" : {
-        'name' : 'Earl Grey',
-        'altnames' : '',
-        'image' : 'https://commons.wikimedia.org/wiki/File:Earl_Grey_Tea.jpg#/media/File:Earl_Grey_Tea.jpg',
-        
-        'origin' : 'UK*',
-        'type' : 'blend',
-        'caffeine' : '40-120',
-        'mainIngredients' : 'Black Tea, Oil of Bergamot',
-
-        'description' : 'A tea blend which has been flavoured with oil of bergamot',
-        'colorDescription' : 'Amber, deep orange',
-        'tasteDescription' : 'smoky, earthy, spicy, nutty, citrus, caramel, leather, fruity, and honey',
-
-        'sources' : ['https://en.wikipedia.org/wiki/Earl_Grey_tea'],
     },
     
 }
@@ -832,7 +793,7 @@ const organizedTeas = {
             "genmaicha" : {
                 'name' : 'Genmaicha',
                 'altnames' : 'Brown Rice Tea, Popcorn Tea',
-                'image' : 'https://upload.wikimedia.org/wikipedia/commons/7/74/Genmaicha.JPG',
+                'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Genmaicha.JPG/640px-Genmaicha.JPG',
                 'origin' : 'Japan',
                 'type' : 'green',
                 'caffeine' : '10mg',
@@ -1057,54 +1018,48 @@ const organizedTeas = {
         'caffeine' : 'time/temperature based',
         'origin' : 'East Asia',
         'description' : 'A style of tea that features young or minimally processed leaves of the Camellia sinensis plant',
-        'colorDescription' : 'Light green or light yellow',
+        'colorDescription' : 'light green or light yellow',
         'tasteDescription' : 'floral, fresh, fruity, with a hint of cucumber or melon.',
         'types' : {
             "baihaoyinzhen" : {
                 'name' : 'Baihoi Yinzhen',
                 'altnames' : 'Silder Needle, Yinzhen',
-                'image' : 'https://commons.wikimedia.org/wiki/File:2010_FirstFlush_Yunnan_Baihao_Yinzhen.jpg#/media/File:2010_FirstFlush_Yunnan_Baihao_Yinzhen.jpg',
-                
+                'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/2010_FirstFlush_Yunnan_Baihao_Yinzhen.jpg/640px-2010_FirstFlush_Yunnan_Baihao_Yinzhen.jpg',                
                 'origin' : 'China',
                 'type' : 'white',
                 'caffeine' : '0-5mg',
-
+                'caffeineLevel' : 'very low',
                 'description' : 'A white tea made from only the top buds of the Camellia sinensis plant.',
                 'colorDescription' : 'light orange, light yellow',
                 'tasteDescription' : 'sweet, vegetal, and delicate',
-
                 'sources' : ['https://en.wikipedia.org/wiki/Baihao_Yinzhen'],
             },
 
             "baimudan" : {
                 'name' : 'Baimudan tea',
                 'altnames' : 'White Peony tea, Mudan White tea',
-                'image' : 'https://commons.wikimedia.org/wiki/File:Baimudan.JPG#/media/File:Baimudan.JPG',
-                
+                'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Baimudan.JPG/640px-Baimudan.JPG',               
                 'origin' : 'China',
                 'type' : 'white',
                 'caffeine' : '15-30mg',
-
+                'caffeineLevel' : 'low',
                 'description' : 'A type of white tea made from plucks each with one leaf shoot and two immediate young leaves (one bud two leaf ratio) of the Camellia sinensis plant.',
                 'colorDescription' : 'golden yellow',
                 'tasteDescription' : ' toasty, slightly sweet floral notes and a clean aftertaste.',
-
                 'sources' : ['https://en.wikipedia.org/wiki/Baimudan_tea'],
             },
 
             "shoumei" : {
                 'name' : 'Shoumei tea',
                 'altnames' : 'Sow Mee',
-                'image' : 'https://commons.wikimedia.org/wiki/File:Shou_Mei_tea.JPG#/media/File:Shou_Mei_tea.JPG',
-                
+                'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Shou_Mei_tea.JPG/640px-Shou_Mei_tea.JPG',
                 'origin' : 'China',
                 'type' : 'white',
                 'caffeine' : '15-30mg',
-
+                'caffeineLevel' : 'low',
                 'description' : 'A type of white tea produced from naturally withered upper leafs and tips',
                 'colorDescription' : 'darker green',
                 'tasteDescription' : 'sweet, vegetal, delicate',
-
                 'sources' : ['https://en.wikipedia.org/wiki/Shoumei_tea'],
             },
 
@@ -1112,15 +1067,13 @@ const organizedTeas = {
                 'name' : 'Xue Ya',
                 'altnames' : 'Snow Buds, Phoenix Eye',
                 'image' : 'https://tea-api-boonaki.herokuapp.com/assets/xueya.jpg',
-                
                 'origin' : 'China',
                 'type' : 'white',
                 'caffeine' : '15-30mg',
-
+                'caffeineLevel' : 'low',
                 'description' : 'A complex white tea from Fuding in Fujian Province',
                 'colorDescription' : 'light yellow',
                 'tasteDescription' : 'smooth, juicy taste has clean notes of unripe fruits, light wood and just a touch of vegetal astringency.',
-
                 'sources' : [''],
             },
 
@@ -1128,15 +1081,13 @@ const organizedTeas = {
                 'name' : 'Satemwa Antlers',
                 'altnames' : '',
                 'image' : 'https://tea-api-boonaki.herokuapp.com/assets/satemwa-antlers.jpg',
-                
                 'origin' : 'Malawi',
                 'type' : 'white',
                 'caffeine' : '10-25mg',
-
+                'caffeineLevel' : 'moderate',
                 'description' : 'A white tea made from a blend of select Superior Cultivars from Malawi, making it rich in theanine and antioxidants.',
                 'colorDescription' : 'golden yellow',
                 'tasteDescription' : 'delicate sweetness of apricot and lychee lingers on the pallet',
-
                 'sources' : [''],
             },
         }
@@ -1147,85 +1098,75 @@ const organizedTeas = {
         "earlgrey" : {
             'name' : 'Earl Grey',
             'altnames' : '',
-            'image' : 'https://commons.wikimedia.org/wiki/File:Earl_Grey_Tea.jpg#/media/File:Earl_Grey_Tea.jpg',
-            
+            'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Earl_Grey_Tea.jpg/640px-Earl_Grey_Tea.jpg',
             'origin' : 'UK*',
             'type' : 'blend',
             'caffeine' : '40-120',
-            'mainIngredients' : 'Black Tea, Oil of Bergamot',
-
+            'caffeineLevel' : 'very high',
+            'mainIngredients' : 'black tea, oil of bergamot',
             'description' : 'A tea blend which has been flavoured with oil of bergamot',
-            'colorDescription' : 'Amber, deep orange',
+            'colorDescription' : 'amber, deep orange',
             'tasteDescription' : 'smoky, earthy, spicy, nutty, citrus, caramel, leather, fruity, and honey',
-
             'sources' : ['https://en.wikipedia.org/wiki/Earl_Grey_tea'],
         },
 
         "ladygrey" : {
             'name' : 'Lady Grey',
             'altnames' : '',
-            'image' : 'https://commons.wikimedia.org/wiki/File:TwiningsLadyGrey_low.jpg#/media/File:TwiningsLadyGrey_low.jpg',
-            
+            'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/TwiningsLadyGrey_low.jpg/640px-TwiningsLadyGrey_low.jpg',
             'origin' : 'UK*',
             'type' : 'blend',
             'caffeine' : '25-110mg',
-            'mainIngredients' : 'Black Tea, Oil of Bergamot, Lemon peel, Orange Peel',
-    
+            'caffeineLevel' : 'high',
+            'mainIngredients' : 'black tea, oil of bergamot, lemon peel, orange Peel',
             'description' : 'Lady Grey tea is a trademarked variation on Earl Grey tea. Like Earl Grey, it is a black tea flavoured with bergamot essential oil.',
             'colorDescription' : 'lighter amber, orange',
             'tasteDescription' : '',
-    
             'sources' : ['https://en.wikipedia.org/wiki/Lady_Grey_(tea)'],
         },
 
         "englishbreakfast" : {
             'name' : 'English Breakfast tea',
             'altnames' : 'Breakfast tea',
-            'image' : 'https://commons.wikimedia.org/wiki/File:English_breakfast_tea_tin.jpg#/media/File:English_breakfast_tea_tin.jpg',
-                
+            'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/English_breakfast_tea_tin.jpg/536px-English_breakfast_tea_tin.jpg',
             'origin' : 'UK',
             'type' : 'blend',
             'caffeine' : '60-100mg',
-            'mainIngredients' : 'Black tea (varied)',
-
+            'caffeineLevel' : 'very high',
+            'mainIngredients' : 'black tea (varied)',
             'description' : 'a traditional blend of black teas from Assam, Ceylon, Keemun and Kenyan teas.',
-            'colorDescription' : 'Deep amber',
+            'colorDescription' : 'deep amber',
             'tasteDescription' : 'may be slightly sweet, bitter, or malty',
-
             'sources' : ['https://en.wikipedia.org/wiki/English_breakfast_tea'],
         },
 
         "irishbreakfast" : {
             'name' : 'Irish Breakfast',
             'altnames' : '',
-            'image' : 'https://commons.wikimedia.org/wiki/File:Milk_in_Irish_Breakfast_tea.jpg#/media/File:Milk_in_Irish_Breakfast_tea.jpg',
-                
+            'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Milk_in_Irish_Breakfast_tea.jpg/480px-Milk_in_Irish_Breakfast_tea.jpg',
             'origin' : 'UK',
             'type' : 'blend',
             'caffeine' : '60-100mg',
-            'mainIngredients' : 'Black tea (varied)',
-
+            'caffeineLevel' : 'very high',
+            'mainIngredients' : 'black tea (varied)',
             'description' : 'A traditional blend of black teas from Assam and Ceylon teas. Because of its strength, it is most commonly served with milk.',
-            'colorDescription' : 'Red, deep amber',
+            'colorDescription' : 'red, deep amber',
             'tasteDescription' : 'Strong, malty, robust',
-
             'sources' : ['https://en.wikipedia.org/wiki/Irish_breakfast_tea'],
         },
 
         "masalachai" : {
             'name' : 'Masala Chai',
             'altnames' : 'Spiced tea',
-            'image' : 'https://commons.wikimedia.org/wiki/File:Contents_of_a_bag_of_chai_tea.jpg#/media/File:Contents_of_a_bag_of_chai_tea.jpg',
-                
+            'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Contents_of_a_bag_of_chai_tea.jpg/640px-Contents_of_a_bag_of_chai_tea.jpg',
             'origin' : 'India',
             'type' : 'blend',
             'caffeine' : '40-50mg',
-            'mainIngredients' : 'Assam tea, sugar, cardamom, black pepper, and ginger.',
-
+            'caffeineLevel' : 'high',
+            'mainIngredients' : 'assam tea, sugar, cardamom, black pepper, and ginger.',
             'description' : 'An Indian tea beverage made by boiling black tea in milk and water with a mixture of aromatic herbs and spices',
             'colorDescription' : 'brown, beige',
             'tasteDescription' : 'fragrant, spiced, astringent and a strong flavor',
-
             'sources' : ['https://en.wikipedia.org/wiki/Masala_chai'],
         },
 
@@ -1233,70 +1174,53 @@ const organizedTeas = {
             'name' : 'Russian Caravan',
             'altnames' : '',
             'image' : 'https://tea-api-boonaki.herokuapp.com/assets/russiancaravan.jpg',
-                
             'origin' : 'China',
             'type' : 'blend',
             'caffeine' : '20-60mg',
-            'mainIngredients' : 'Oolong tea, keemun tea, lapsang souchong tea',
-
+            'caffeineLevel' : 'high',
+            'mainIngredients' : 'oolong tea, keemun tea, lapsang souchong tea',
             'description' : 'A chinese tea blended with various oolong and black teas that gets its name from tea trading through a traderoute that connected eastern Asia to Europe through Russia',
-            'colorDescription' : 'Red, deep orange',
+            'colorDescription' : 'red, deep orange',
             'tasteDescription' : 'sweet, malty, and smoky taste',
-
             'sources' : ['https://en.wikipedia.org/wiki/Russian_Caravan'],
         },
 
         "genmaicha" : {
-                'name' : 'Genmaicha',
-                'altnames' : 'Brown Rice Tea, Popcorn Tea',
-                'image' : 'https://commons.wikimedia.org/wiki/File:Genmaicha.JPG#/media/File:Genmaicha.JPG',
-                
-                'origin' : 'Japan',
-                'type' : 'blend',
-                'caffeine' : '10mg',
-                'mainIngredients' : 'Green tea, brown rice',
-
-                'description' : 'A Japanese brown rice green tea consisting of green tea mixed with roasted popped brown rice.',
-                'colorDescription' : 'light yellow-green',
-                'tasteDescription' : 'toasty, nutty',
-
-                'sources' : ['https://en.wikipedia.org/wiki/Genmaicha'],
+            'name' : 'Genmaicha',
+            'altnames' : 'Brown Rice Tea, Popcorn Tea',
+            'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Genmaicha.JPG/640px-Genmaicha.JPG',
+            'origin' : 'Japan',
+            'type' : 'blend',
+            'caffeine' : '10mg',
+            'caffeineLevel' : 'low',
+            'mainIngredients' : 'green tea, brown rice',
+            'description' : 'A Japanese brown rice green tea consisting of green tea mixed with roasted popped brown rice.',
+            'colorDescription' : 'light yellow-green',
+            'tasteDescription' : 'toasty, nutty',
+            'sources' : ['https://en.wikipedia.org/wiki/Genmaicha'],
         },
 
         "jasminedragonpearl" : {
             'name' : 'Jasmine Dragon Pearl',
             'altnames' : '',
             'image' : 'https://tea-api-boonaki.herokuapp.com/assets/jasminedragon.jpg',
-            
             'origin' : 'China',
             'type' : 'blend',
             'caffeine' : '10-20mg',
-            'mainIngredients' : 'Green tea, white tea, jasmine flowers',
-
+            'caffeineLevel' : 'low',
+            'mainIngredients' : 'green tea, white tea, jasmine flowers',
             'description' : 'Dragon Pearl Jasmine is comprised of little, hand-rolled pearls gently infused with jasmine flowers',
             'colorDescription' : 'clear light yellow',
             'tasteDescription' : 'Jasmine, root beer, sweet, but yet a light/subtle feeling.',
-
             'sources' : [''],
         },
     },
 
-    // 'yellow' : {
-    //     'name' : 'Yellow Tea',
-    //     'caffeine' : 'time/temperature based',
-    //     'origin' : 'East Asia',
-    //     'description' : '',
-    //     'colorDescription' : 'Light green or light yellow',
-    //     'tasteDescription' : 'floral, fresh, fruity, with a hint of cucumber or melon.',
-    //     'types' : {
-
-    //     },
-    // },
-
     'unknown' : {
-        'Origin' : 'NA',
-        'Caffeine' : 'NA',
-        'Color' : 'NA',
+        'name' : 'NA',
+        'origin' : 'NA',
+        'caffeine' : 'NA',
+        'color' : 'NA',
     },
 }
 
