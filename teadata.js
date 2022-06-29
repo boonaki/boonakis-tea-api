@@ -688,7 +688,7 @@ const organizedTeas = {
         'name' : 'Black Tea',
         'altnames' : 'Red Tea',
         'origin' : 'China',
-        'image' : 'https://commons.wikimedia.org/wiki/File:Cup_of_black_tea.JPG#/media/File:Cup_of_black_tea.JPG',
+        'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Cup_of_black_tea.JPG/1920px-Cup_of_black_tea.JPG?20150517152936',
         'caffeine' : '40-120mg',
         'sources' : ['https://en.wikipedia.org/wiki/Black_tea'],
         'description' : 'Black tea, also translated to red tea in various East Asian languages, is a type of tea that is more oxidized than other types',
@@ -698,7 +698,7 @@ const organizedTeas = {
             "assam" : {
                 'name' : 'Assam Tea',
                 'altnames' : '',
-                'image' : 'https://commons.wikimedia.org/wiki/File:Assam-Tee_SFTGFOP1.jpg#/media/File:Assam-Tee_SFTGFOP1.jpg',
+                'image' : 'https://upload.wikimedia.org/wikipedia/commons/3/3b/Assam-Tee_SFTGFOP1.jpg',
                 'origin' : 'Assam, India',
                 'type' : 'black',
                 'caffeine' : '60-110mg',
