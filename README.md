@@ -1,1 +1,67 @@
-# tea-api
+# a free, open-source API for tea!
+This is a free tea database that gives simple information about various teas and their types. A majority of the information gathered comes from https://www.wikipedia.org
+
+**Access it here:** https://tea-api-boonaki.herokuapp.com/
+
+<p>
+ Teas will contain the following information:
+</p>
+
+
+- Name
+- Alternate names
+- Origin
+- Image
+- Caffeiene Content (per 1 cup/8floz)
+- Type or types
+- Quick description
+- Taste description
+- Color description
+- If tea is a blend, then data will include main ingredients
+- Any sources used
+
+## How to use:
+
+<p>In this database, their are two main objects inside of the data being sent</p>
+<p>1. An organized list of the teas with teas sorted by types and nested within their main types object</p>
+<p>2. An unorganized list of all of the teas in the database</p>
+<p>To access the organized list, use the url: https://tea-api-boonaki.herokuapp.com/api/teas</p>
+<p>To access the un-organized list, use the url: https://tea-api-boonaki.herokuapp.com/api/all</p>
+<p>To query the database for individual teas, use the url: https://tea-api-boonaki.herokuapp.com/api/teas/[teaname]</p>
+
+<p>All specified endpoints will return an object</p>
+
+**For example:** https://tea-api-boonaki.herokuapp.com/api/teas/earlgrey will return the following object:
+     
+```
+"earlgrey" : {
+    'name' : 'Earl Grey',
+    'altnames' : '',
+    'image' : 'https://commons.wikimedia.org/wiki/File:Earl_Grey_Tea.jpg#/media/File:Earl_Grey_Tea.jpg',
+        
+    'origin' : 'UK*',
+    'type' : 'blend',
+    'caffeine' : '40-120',
+    'mainIngredients' : 'Black Tea, Oil of Bergamot',
+
+    'description' : 'A tea blend which has been flavoured with oil of bergamot',
+    'colorDescription' : 'Amber, deep orange',
+    'tasteDescription' : 'smoky, earthy, spicy, nutty, citrus, caramel, leather, fruity, and honey',
+
+    'sources' : ['https://en.wikipedia.org/wiki/Earl_Grey_tea'],
+},
+```
+
+**Pull requests welcome!**
+
+## Optimizations:
+
+The original plan was to connect the server to a database environment, like mongoDB, to store and modify the data via a simple CRUD app, but chose to go with hardcoding the data within the app itself to remove the factor of un-validated input as well as for ease-of-use. The data is also stored in a seperate file, and exported into the server to reduce clutter.
+
+## Other Projects:
+
+**The TeaDB:** https://github.com/boonaki/tea-database
+
+**NASA APOD App:** https://github.com/boonaki/nasaAPODapp
+
+**Square Tag:** https://github.com/boonaki/squaretag
