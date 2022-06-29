@@ -477,7 +477,7 @@ const unorganizedTeas = {
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Earl_Grey_Tea.jpg/640px-Earl_Grey_Tea.jpg',
         'origin' : 'UK*',
         'type' : 'blend',
-        'caffeine' : '40-120',
+        'caffeine' : '40-120mg',
         'caffeineLevel' : 'very high',
         'mainIngredients' : 'black tea, oil of bergamot',
         'description' : 'A tea blend which has been flavoured with oil of bergamot',
