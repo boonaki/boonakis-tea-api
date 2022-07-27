@@ -1,7 +1,8 @@
 # a free, open-source API for tea!
 This is a free tea database that gives simple information about various teas and their types. A majority of the information gathered comes from https://www.wikipedia.org
 
-**Access it here:** https://tea-api-boonaki.herokuapp.com/
+- **Access it here:** https://tea-api-boonaki.herokuapp.com/
+- **See it in action!** https://just-teas.herokuapp.com
 
 <p>
  Teas will contain the following information:
@@ -52,10 +53,6 @@ This is a free tea database that gives simple information about various teas and
 ```
 
 **Pull requests welcome!**
-
-## Optimizations:
-
-The original plan was to connect the server to a database environment, like mongoDB, to store and modify the data via a simple CRUD app, but chose to go with hardcoding the data within the app itself to remove the factor of un-validated input as well as for ease-of-use. The data is also stored in a seperate file, and exported into the server to reduce clutter.
 
 ## Other Projects:
 
