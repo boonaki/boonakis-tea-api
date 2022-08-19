@@ -52,8 +52,6 @@ This is a free tea database that gives simple information about various teas and
 },
 ```
 
-**Pull requests welcome!**
-
 ## Other Projects:
 
 **The TeaDB:** https://github.com/boonaki/tea-database
