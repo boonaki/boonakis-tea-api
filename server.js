@@ -6,8 +6,8 @@ const teaData = require(__dirname + '/teadata.js')
 require('dotenv').config()
 const connectionString = process.env.CONNECTIONSTRING
 
-const teas = teaData.teas
-const allTeas = teaData.all
+// const teas = teaData.teas
+// const allTeas = teaData.all
 
 app.use(cors())
 app.use('/assets', express.static('assets'));
@@ -57,9 +57,16 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
         
         app.get('/api/teas/:name', (req,res) => {
             let teaname = req.params.name.split(' ').join('').toLowerCase()
-            unorganizedCollection.find({slug:teaname}).toArray()
+            organizedCollection.find({slug:teaname}).toArray()
                 .then(result => {
-                    res.json(result)
+                    if(result.length > 0){
+                        res.json(result)
+                    }else{
+                        unorganizedCollection.find({slug:teaname}).toArray()
+                            .then(data => {
+                                res.json(data)
+                            })
+                    }
                 })
                 .catch(err => {
                     console.error(err)
