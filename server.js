@@ -39,7 +39,6 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
         })
         
         app.get('/api/all', (req,res) => {
-            res.json(allTeas)
             unorganizedCollection.find().toArray()
                 .then(result => {
                     res.json(result)
