@@ -12,6 +12,7 @@ https://tea-api-boonaki.herokuapp.com/
 const unorganizedTeas = {
     'black' : {
         'name' : 'Black Tea',
+        'slug' : 'black',
         'altnames' : 'Red Tea',
         'origin' : 'China',
         'type' : 'black',
@@ -24,6 +25,7 @@ const unorganizedTeas = {
     },
     'green' : {
         'name': 'Green Tea',
+        'slug' : 'green',
         'image' : 'https://tea-api-boonaki.herokuapp.com/assets/green.jpg',
         'origin' : 'China',
         'type' : 'green',
@@ -35,6 +37,7 @@ const unorganizedTeas = {
     },
     'oolong' : {
         'name' : 'Wulong (oolong) Tea',
+        'slug' : 'wulong',
         'caffeine' : '37-55mg',
         'origin' : 'East Asia',
         'type' : 'oolong',
@@ -44,6 +47,7 @@ const unorganizedTeas = {
     },
     'white' : {
         'name' : 'White Tea',
+        'slug' : 'white',
         'caffeine' : 'time/temperature based',
         'type' : 'white',
         'origin' : 'East Asia',
@@ -53,6 +57,7 @@ const unorganizedTeas = {
     },
     "assam" : {
         'name' : 'Assam Tea',
+        'slug' : 'assam',
         'altnames' : '',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/3/3b/Assam-Tee_SFTGFOP1.jpg',
         'origin' : 'Assam, India',
@@ -67,6 +72,7 @@ const unorganizedTeas = {
 
     "darjeeling" : {
         'name' : 'Darjeeling Tea',
+        'slug' : 'darjeeling',
         'altnames' : '',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Darjeeling%2C_India%2C_Darjeeling_tea_in_variety%2C_Black_tea.jpg/1920px-Darjeeling%2C_India%2C_Darjeeling_tea_in_variety%2C_Black_tea.jpg?20210606141050',
         'origin' : 'India',
@@ -81,6 +87,7 @@ const unorganizedTeas = {
 
     "lapsangsouchong" : {
         'name' : 'Lapsang Souchong',
+        'slug' : 'lapsangsouchong',
         'altnames' : 'Smoked Tea, Smoky Souchong',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Lapsang_Souchong.jpg/1024px-Lapsang_Souchong.jpg?20170625192109',
         'origin' : 'Fujian Province, China',
@@ -95,6 +102,7 @@ const unorganizedTeas = {
 
     "keemun" : {
         'name' : 'Keemun',
+        'slug' : 'keemun',
         'altnames' : 'Qimen Red Tea',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/2/25/Keemun-img1.jpg',
         'origin' : 'China',
@@ -109,6 +117,7 @@ const unorganizedTeas = {
 
     "dianhong" : {
         'name' : 'Dianhong Tea',
+        'slug' : 'dianhong',
         'altnames' : 'Yunnan Red Tea',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/GoldenDianHong.jpg/800px-GoldenDianHong.jpg?20071029183852',
         'origin' : 'Yunnan Province, China',
@@ -123,6 +132,7 @@ const unorganizedTeas = {
 
     "sencha" : {
         'name' : 'Sencha Tea',
+        'slug' : 'sencha',
         'altnames' : 'Steeped Tea',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/2017_Kagoshima_sencha.jpg/1024px-2017_Kagoshima_sencha.jpg?20170624211809',
         'origin' : 'Japan',
@@ -137,6 +147,7 @@ const unorganizedTeas = {
 
     "matcha" : {
         'name' : 'Matcha Tea',
+        'slug' : 'matcha',
         'altnames' : '',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Matcha_Scoop.jpg/1024px-Matcha_Scoop.jpg?20190105233506',
         'origin' : 'China',
@@ -151,6 +162,7 @@ const unorganizedTeas = {
 
     "bancha" : {
         'name' : 'Bancha',
+        'slug' : 'bancha',
         'altnames' : '',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/d/dd/Shizuoka_bancha.jpg',
         'origin' : 'Japan',
@@ -165,6 +177,7 @@ const unorganizedTeas = {
 
     "gyokuro" : {
         'name' : 'Gyokuro',
+        'slug' : 'gyokuro',
         'altnames' : 'Jade Dew, Pearl Dew',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Gyokuro_img_0067.jpg/480px-Gyokuro_img_0067.jpg',
         'origin' : 'Japan',
@@ -179,6 +192,7 @@ const unorganizedTeas = {
 
     "kukicha" : {
         'name' : 'Kukicha',
+        'slug' : 'kukicha',
         'altnames' : 'Bōcha, Twig tea, Stalk tea',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Kukicha.jpg/480px-Kukicha.jpg',
         'origin' : 'Japan',
@@ -193,6 +207,7 @@ const unorganizedTeas = {
 
     "konacha" : {
         'name' : 'Konacha',
+        'slug' : 'konacha',
         'altnames' : 'Gyokurokonacha',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Konacha.jpg/640px-Konacha.jpg',
         'origin' : 'Japan',
@@ -207,6 +222,7 @@ const unorganizedTeas = {
 
     "hojicha" : {
         'name' : 'Hojicha',
+        'slug' : 'hojicha',
         'altnames' : '',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Houjicha.jpg/360px-Houjicha.jpg',
         'origin' : 'Kyoto, Japan',
@@ -221,6 +237,7 @@ const unorganizedTeas = {
 
     "dahongpao" : {
         'name' : 'Da Hong Pao',
+        'slug' : 'dahongpao',
         'altnames' : '',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/2/29/Da_Hong_Pao_Oolong_tea_leaf.jpg',
         'origin' : 'China',
@@ -235,6 +252,7 @@ const unorganizedTeas = {
 
     "shuijingui" : {
         'name' : 'Shui Jin Gui',
+        'slug' : 'shuijingui',
         'altnames' : 'Golden Water Turtle Tea',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Shui_Jin_Gui_Oolong_tea_leaf.jpg',
         'origin' : 'China',
@@ -249,6 +267,7 @@ const unorganizedTeas = {
 
     "tieluohan" : {
         'name' : 'Tieluohan',
+        'slug' : 'tieluohan',
         'altnames' : 'Iron Arhat',
         'image' : 'https://tea-api-boonaki.herokuapp.com/assets/tieluohan.jpg',
         'origin' : 'China',
@@ -263,6 +282,7 @@ const unorganizedTeas = {
 
     "baijiguan" : {
         'name' : 'Bai Jiguan',
+        'slug' : 'baijiguan',
         'altnames' : 'White Rooster',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Bai_Jiguan.jpg/600px-Bai_Jiguan.jpg',
         'origin' : 'China',
@@ -277,6 +297,7 @@ const unorganizedTeas = {
 
     "shuixian" : {
         'name' : 'Shui Xian',
+        'slug' : 'shuixian',
         'altnames' : 'Water sprite, Sacred Lily',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Shui_Xian.jpg/600px-Shui_Xian.jpg',
         'origin' : 'China',
@@ -291,6 +312,7 @@ const unorganizedTeas = {
 
     "tieguanyin" : {
         'name' : 'Tieguanyin',
+        'slug' : 'tieguanyin',
         'altnames' : 'iron Goddess, Iron Guanyin',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Tieguanyin2.jpg/640px-Tieguanyin2.jpg',
         'origin' : 'China',
@@ -305,6 +327,7 @@ const unorganizedTeas = {
 
     "huangjingui" : {
         'name' : 'Huangjin Gui',
+        'slug' : 'huangjingui',
         'altnames' : 'Golden Osmanthus, Golden Cassia',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Huang_Jin_Gui_Tea.jpeg/640px-Huang_Jin_Gui_Tea.jpeg',
         'origin' : 'China',
@@ -319,6 +342,7 @@ const unorganizedTeas = {
 
     "dongding" : {
         'name' : 'Dòng Dǐng',
+        'slug' : 'dongding',
         'altnames' : 'Tung-ting',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Dong_Ding_tea.jpg/640px-Dong_Ding_tea.jpg',
         'origin' : 'Taiwan',
@@ -333,6 +357,7 @@ const unorganizedTeas = {
 
     "dongfangmeiren" : {
         'name' : 'Dongfang Meiren',
+        'slug' : 'dongfangmeiren',
         'altnames' : 'White-tip oolong',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Dun-fan-mey-zhen-teashopby.jpg/640px-Dun-fan-mey-zhen-teashopby.jpg',
         'origin' : 'Taiwan',
@@ -347,6 +372,7 @@ const unorganizedTeas = {
 
     "baozhong" : {
         'name' : 'Baozhong',
+        'slug' : 'baozhong',
         'altnames' : 'Pouchong',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Spring_pouchong_tea_leaves_on_plate.jpg/640px-Spring_pouchong_tea_leaves_on_plate.jpg',
         'origin' : 'China',
@@ -361,6 +387,7 @@ const unorganizedTeas = {
 
     "ruanzhi" : {
         'name' : 'Ruan Zhi Oolong',
+        'slug' : 'ruanzhi',
         'altnames' : '',
         'image' : 'https://tea-api-boonaki.herokuapp.com/assets/ruanzhi.jpg',
         'origin' : 'Taiwan',
@@ -375,6 +402,7 @@ const unorganizedTeas = {
 
     "jinxuan" : {
         'name' : 'Jin Xuan',
+        'slug' : 'jinxuan',
         'altnames' : 'Milk Oolong, Nai Xiang',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Jin_Xuan_oolong_tea.jpg/480px-Jin_Xuan_oolong_tea.jpg',
         'origin' : 'Taiwan',
@@ -389,6 +417,7 @@ const unorganizedTeas = {
 
     "assamsmokedoolong" : {
         'name' : 'Assam Smoked Oolong',
+        'slug' : 'assamsmokedoolong',
         'altnames' : '',
         'image' : 'https://tea-api-boonaki.herokuapp.com/assets/assam-smokedoolong.jpg',
         'origin' : 'China',
@@ -403,6 +432,7 @@ const unorganizedTeas = {
 
     "baihaoyinzhen" : {
         'name' : 'Baihoi Yinzhen',
+        'slug' : 'baihoiyinzhen',
         'altnames' : 'Silder Needle, Yinzhen',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/2010_FirstFlush_Yunnan_Baihao_Yinzhen.jpg/640px-2010_FirstFlush_Yunnan_Baihao_Yinzhen.jpg',                
         'origin' : 'China',
@@ -417,6 +447,7 @@ const unorganizedTeas = {
 
     "baimudan" : {
         'name' : 'Baimudan tea',
+        'slug' : 'baimudan',
         'altnames' : 'White Peony tea, Mudan White tea',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Baimudan.JPG/640px-Baimudan.JPG',               
         'origin' : 'China',
@@ -431,6 +462,7 @@ const unorganizedTeas = {
 
     "shoumei" : {
         'name' : 'Shoumei tea',
+        'slug' : 'shoumei',
         'altnames' : 'Sow Mee',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Shou_Mei_tea.JPG/640px-Shou_Mei_tea.JPG',
         'origin' : 'China',
@@ -445,6 +477,7 @@ const unorganizedTeas = {
 
     "xueya" : {
         'name' : 'Xue Ya',
+        'slug' : 'xueya',
         'altnames' : 'Snow Buds, Phoenix Eye',
         'image' : 'https://tea-api-boonaki.herokuapp.com/assets/xueya.jpg',
         'origin' : 'China',
@@ -459,6 +492,7 @@ const unorganizedTeas = {
 
     "satemwaantlers" : {
         'name' : 'Satemwa Antlers',
+        'slug' : 'satemwaantlers',
         'altnames' : '',
         'image' : 'https://tea-api-boonaki.herokuapp.com/assets/satemwa-antlers.jpg',
         'origin' : 'Malawi',
@@ -473,6 +507,7 @@ const unorganizedTeas = {
 
     "earlgrey" : {
         'name' : 'Earl Grey',
+        'slug' : 'earlgrey',
         'altnames' : '',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Earl_Grey_Tea.jpg/640px-Earl_Grey_Tea.jpg',
         'origin' : 'UK*',
@@ -488,6 +523,7 @@ const unorganizedTeas = {
 
     "ladygrey" : {
         'name' : 'Lady Grey',
+        'slug' : 'ladygrey',
         'altnames' : '',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/TwiningsLadyGrey_low.jpg/640px-TwiningsLadyGrey_low.jpg',
         'origin' : 'UK*',
@@ -503,6 +539,7 @@ const unorganizedTeas = {
 
     "englishbreakfast" : {
         'name' : 'English Breakfast tea',
+        'slug' : 'englishbreakfast',
         'altnames' : 'Breakfast tea',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/English_breakfast_tea_tin.jpg/536px-English_breakfast_tea_tin.jpg',
         'origin' : 'UK',
@@ -518,6 +555,7 @@ const unorganizedTeas = {
 
     "irishbreakfast" : {
         'name' : 'Irish Breakfast',
+        'slug' : 'irishbreakfast',
         'altnames' : '',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Milk_in_Irish_Breakfast_tea.jpg/480px-Milk_in_Irish_Breakfast_tea.jpg',
         'origin' : 'UK',
@@ -533,6 +571,7 @@ const unorganizedTeas = {
 
     "masalachai" : {
         'name' : 'Masala Chai',
+        'slug' : 'masalachai',
         'altnames' : 'Spiced tea',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Contents_of_a_bag_of_chai_tea.jpg/640px-Contents_of_a_bag_of_chai_tea.jpg',
         'origin' : 'India',
@@ -548,6 +587,7 @@ const unorganizedTeas = {
 
     "russiancaravan" : {
         'name' : 'Russian Caravan',
+        'slug' : 'russiancaravan',
         'altnames' : '',
         'image' : 'https://tea-api-boonaki.herokuapp.com/assets/russiancaravan.jpg',
         'origin' : 'China',
@@ -563,6 +603,7 @@ const unorganizedTeas = {
 
     "genmaicha" : {
         'name' : 'Genmaicha',
+        'slug' : 'genmaicha',
         'altnames' : 'Brown Rice Tea, Popcorn Tea',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Genmaicha.JPG/640px-Genmaicha.JPG',
         'origin' : 'Japan',
@@ -578,6 +619,7 @@ const unorganizedTeas = {
 
     "jasminedragonpearl" : {
         'name' : 'Jasmine Dragon Pearl',
+        'slug' : 'jasminedragonpearl',
         'altnames' : '',
         'image' : 'https://tea-api-boonaki.herokuapp.com/assets/jasminedragon.jpg',
         'origin' : 'China',
@@ -601,6 +643,7 @@ const organizedTeas = {
 
     'black' : {
         'name' : 'Black Tea',
+        'slug' : 'black',
         'altnames' : 'Red Tea',
         'origin' : 'China',
         'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Cup_of_black_tea.JPG/1920px-Cup_of_black_tea.JPG?20150517152936',
@@ -613,6 +656,7 @@ const organizedTeas = {
         'types' : {
             "assam" : {
                 'name' : 'Assam Tea',
+                'slug' : 'assam',
                 'altnames' : '',
                 'image' : 'https://upload.wikimedia.org/wikipedia/commons/3/3b/Assam-Tee_SFTGFOP1.jpg',
                 'origin' : 'Assam, India',
@@ -627,6 +671,7 @@ const organizedTeas = {
 
             "darjeeling" : {
                 'name' : 'Darjeeling Tea',
+                'slug' : 'darjeeling',
                 'altnames' : '',
                 'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Darjeeling%2C_India%2C_Darjeeling_tea_in_variety%2C_Black_tea.jpg/1920px-Darjeeling%2C_India%2C_Darjeeling_tea_in_variety%2C_Black_tea.jpg?20210606141050',
                 'origin' : 'India',
@@ -641,6 +686,7 @@ const organizedTeas = {
 
             "lapsangsouchong" : {
                 'name' : 'Lapsang Souchong',
+                'slug' : 'lapsangsouchong',
                 'altnames' : 'Smoked Tea, Smoky Souchong',
                 'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Lapsang_Souchong.jpg/1024px-Lapsang_Souchong.jpg?20170625192109',
                 'origin' : 'Fujian Province, China',
@@ -655,6 +701,7 @@ const organizedTeas = {
 
             "keemun" : {
                 'name' : 'Keemun',
+                'slug' : 'keemun',
                 'altnames' : 'Qimen Red Tea',
                 'image' : 'https://upload.wikimedia.org/wikipedia/commons/2/25/Keemun-img1.jpg',
                 'origin' : 'China',
@@ -669,6 +716,7 @@ const organizedTeas = {
 
             "dianhong" : {
                 'name' : 'Dianhong Tea',
+                'slug' : 'dianhong',
                 'altnames' : 'Yunnan Red Tea',
                 'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/GoldenDianHong.jpg/800px-GoldenDianHong.jpg?20071029183852',
                 'origin' : 'Yunnan Province, China',
@@ -682,6 +730,7 @@ const organizedTeas = {
             },
             "earlgrey" : {
                 'name' : 'Earl Grey',
+                'slug' : 'earlgrey',
                 'altnames' : '',
                 'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Earl_Grey_Tea.jpg/800px-Earl_Grey_Tea.jpg?20111209191130',
                 'origin' : 'UK*',
@@ -698,6 +747,7 @@ const organizedTeas = {
 
     'green' : {
         'name': 'Green Tea',
+        'slug' : 'green',
         'image' : 'https://tea-api-boonaki.herokuapp.com/assets/green.jpg',
         'origin' : 'China',
         'caffeine' : '~10mg',
@@ -708,6 +758,7 @@ const organizedTeas = {
         'types' : {
             "sencha" : {
                 'name' : 'Sencha Tea',
+                'slug' : 'sencha',
                 'altnames' : 'Steeped Tea',
                 'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/2017_Kagoshima_sencha.jpg/1024px-2017_Kagoshima_sencha.jpg?20170624211809',
                 'origin' : 'Japan',
@@ -722,6 +773,7 @@ const organizedTeas = {
         
             "matcha" : {
                 'name' : 'Matcha Tea',
+                'slug' : 'matcha',
                 'altnames' : '',
                 'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Matcha_Scoop.jpg/1024px-Matcha_Scoop.jpg?20190105233506',
                 'origin' : 'China',
@@ -736,6 +788,7 @@ const organizedTeas = {
         
             "bancha" : {
                 'name' : 'Bancha',
+                'slug' : 'bancha',
                 'altnames' : '',
                 'image' : 'https://upload.wikimedia.org/wikipedia/commons/d/dd/Shizuoka_bancha.jpg',
                 'origin' : 'Japan',
@@ -750,6 +803,7 @@ const organizedTeas = {
 
             "gyokuro" : {
                 'name' : 'Gyokuro',
+                'slug' : 'gyokuro',
                 'altnames' : 'Jade Dew, Pearl Dew',
                 'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Gyokuro_img_0067.jpg/480px-Gyokuro_img_0067.jpg',
                 'origin' : 'Japan',
@@ -764,6 +818,7 @@ const organizedTeas = {
 
             "kukicha" : {
                 'name' : 'Kukicha',
+                'slug' : 'kukicha',
                 'altnames' : 'Bōcha, Twig tea, Stalk tea',
                 'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Kukicha.jpg/480px-Kukicha.jpg',
                 'origin' : 'Japan',
@@ -778,6 +833,7 @@ const organizedTeas = {
 
             "konacha" : {
                 'name' : 'Konacha',
+                'slug' : 'konacha',
                 'altnames' : 'Gyokurokonacha',
                 'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Konacha.jpg/640px-Konacha.jpg',
                 'origin' : 'Japan',
@@ -792,6 +848,7 @@ const organizedTeas = {
 
             "genmaicha" : {
                 'name' : 'Genmaicha',
+                'slug' : 'genmaicha',
                 'altnames' : 'Brown Rice Tea, Popcorn Tea',
                 'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Genmaicha.JPG/640px-Genmaicha.JPG',
                 'origin' : 'Japan',
@@ -806,6 +863,7 @@ const organizedTeas = {
 
             "hojicha" : {
                 'name' : 'Hojicha',
+                'slug' : 'hojicha',
                 'altnames' : '',
                 'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Houjicha.jpg/360px-Houjicha.jpg',
                 'origin' : 'Kyoto, Japan',
@@ -822,6 +880,7 @@ const organizedTeas = {
 
     'oolong' : {
         'name' : 'Wulong (oolong) Tea',
+        'slug' : 'oolong',
         'caffeine' : '37-55mg',
         'origin' : 'East Asia',
         'description' : 'A traditional semi-oxidized Chinese tea produced through a process including withering the plant under strong sun and oxidation before curling and twisting',
@@ -830,6 +889,7 @@ const organizedTeas = {
         'types' : {
             "dahongpao" : {
                 'name' : 'Da Hong Pao',
+                'slug' : 'dahongpao',
                 'altnames' : '',
                 'image' : 'https://upload.wikimedia.org/wikipedia/commons/2/29/Da_Hong_Pao_Oolong_tea_leaf.jpg',
                 'origin' : 'China',
@@ -844,6 +904,7 @@ const organizedTeas = {
 
             "shuijingui" : {
                 'name' : 'Shui Jin Gui',
+                'slug' : 'shuijingui',
                 'altnames' : 'Golden Water Turtle Tea',
                 'image' : 'https://upload.wikimedia.org/wikipedia/commons/b/b0/Shui_Jin_Gui_Oolong_tea_leaf.jpg',
                 'origin' : 'China',
@@ -858,6 +919,7 @@ const organizedTeas = {
 
             "tieluohan" : {
                 'name' : 'Tieluohan',
+                'slug' : 'tieluohan',
                 'altnames' : 'Iron Arhat',
                 'image' : 'https://tea-api-boonaki.herokuapp.com/assets/tieluohan.jpg',
                 'origin' : 'China',
@@ -872,6 +934,7 @@ const organizedTeas = {
 
             "baijiguan" : {
                 'name' : 'Bai Jiguan',
+                'slug' : 'baijiguan',
                 'altnames' : 'White Rooster',
                 'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Bai_Jiguan.jpg/600px-Bai_Jiguan.jpg',
                 'origin' : 'China',
@@ -886,6 +949,7 @@ const organizedTeas = {
 
             "shuixian" : {
                 'name' : 'Shui Xian',
+                'slug' : 'shuixian',
                 'altnames' : 'Water sprite, Sacred Lily',
                 'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Shui_Xian.jpg/600px-Shui_Xian.jpg',
                 'origin' : 'China',
@@ -900,6 +964,7 @@ const organizedTeas = {
 
             "tieguanyin" : {
                 'name' : 'Tieguanyin',
+                'slug' : 'tieguanyin',
                 'altnames' : 'iron Goddess, Iron Guanyin',
                 'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Tieguanyin2.jpg/640px-Tieguanyin2.jpg',
                 'origin' : 'China',
@@ -914,6 +979,7 @@ const organizedTeas = {
 
             "huangjingui" : {
                 'name' : 'Huangjin Gui',
+                'slug' : 'huangjingui',
                 'altnames' : 'Golden Osmanthus, Golden Cassia',
                 'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Huang_Jin_Gui_Tea.jpeg/640px-Huang_Jin_Gui_Tea.jpeg',
                 'origin' : 'China',
@@ -928,6 +994,7 @@ const organizedTeas = {
 
             "dongding" : {
                 'name' : 'Dòng Dǐng',
+                'slug' : 'dongding',
                 'altnames' : 'Tung-ting',
                 'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Dong_Ding_tea.jpg/640px-Dong_Ding_tea.jpg',
                 'origin' : 'Taiwan',
@@ -942,6 +1009,7 @@ const organizedTeas = {
 
             "dongfangmeiren" : {
                 'name' : 'Dongfang Meiren',
+                'slug' : 'dongfangmeiren',
                 'altnames' : 'White-tip oolong',
                 'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Dun-fan-mey-zhen-teashopby.jpg/640px-Dun-fan-mey-zhen-teashopby.jpg',
                 'origin' : 'Taiwan',
@@ -956,6 +1024,7 @@ const organizedTeas = {
 
             "baozhong" : {
                 'name' : 'Baozhong',
+                'slug' : 'baozhong',
                 'altnames' : 'Pouchong',
                 'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Spring_pouchong_tea_leaves_on_plate.jpg/640px-Spring_pouchong_tea_leaves_on_plate.jpg',
                 'origin' : 'China',
@@ -970,6 +1039,7 @@ const organizedTeas = {
 
             "ruanzhi" : {
                 'name' : 'Ruan Zhi Oolong',
+                'slug' : 'ruanzhi',
                 'altnames' : '',
                 'image' : 'https://tea-api-boonaki.herokuapp.com/assets/ruanzhi.jpg',
                 'origin' : 'Taiwan',
@@ -984,6 +1054,7 @@ const organizedTeas = {
 
             "jinxuan" : {
                 'name' : 'Jin Xuan',
+                'slug' : 'jinxuan',
                 'altnames' : 'Milk Oolong, Nai Xiang',
                 'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Jin_Xuan_oolong_tea.jpg/480px-Jin_Xuan_oolong_tea.jpg',
                 'origin' : 'Taiwan',
@@ -998,6 +1069,7 @@ const organizedTeas = {
 
             "assamsmokedoolong" : {
                 'name' : 'Assam Smoked Oolong',
+                'slug' : 'assamsmokedoolong',
                 'altnames' : '',
                 'image' : 'https://tea-api-boonaki.herokuapp.com/assets/assam-smokedoolong.jpg',
                 'origin' : 'China',
@@ -1015,6 +1087,7 @@ const organizedTeas = {
 
     'white' : {
         'name' : 'White Tea',
+        'slug' : 'white',
         'caffeine' : 'time/temperature based',
         'origin' : 'East Asia',
         'description' : 'A style of tea that features young or minimally processed leaves of the Camellia sinensis plant',
@@ -1023,6 +1096,7 @@ const organizedTeas = {
         'types' : {
             "baihaoyinzhen" : {
                 'name' : 'Baihoi Yinzhen',
+                'slug' : 'baihoiyinzhen',
                 'altnames' : 'Silder Needle, Yinzhen',
                 'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/2010_FirstFlush_Yunnan_Baihao_Yinzhen.jpg/640px-2010_FirstFlush_Yunnan_Baihao_Yinzhen.jpg',                
                 'origin' : 'China',
@@ -1037,6 +1111,7 @@ const organizedTeas = {
 
             "baimudan" : {
                 'name' : 'Baimudan tea',
+                'slug' : 'baimudan',
                 'altnames' : 'White Peony tea, Mudan White tea',
                 'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Baimudan.JPG/640px-Baimudan.JPG',               
                 'origin' : 'China',
@@ -1051,6 +1126,7 @@ const organizedTeas = {
 
             "shoumei" : {
                 'name' : 'Shoumei tea',
+                'slug' : 'shoumei',
                 'altnames' : 'Sow Mee',
                 'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Shou_Mei_tea.JPG/640px-Shou_Mei_tea.JPG',
                 'origin' : 'China',
@@ -1065,6 +1141,7 @@ const organizedTeas = {
 
             "xueya" : {
                 'name' : 'Xue Ya',
+                'slug' : 'xueya',
                 'altnames' : 'Snow Buds, Phoenix Eye',
                 'image' : 'https://tea-api-boonaki.herokuapp.com/assets/xueya.jpg',
                 'origin' : 'China',
@@ -1079,6 +1156,7 @@ const organizedTeas = {
 
             "satemwaantlers" : {
                 'name' : 'Satemwa Antlers',
+                'slug' : 'satemwaantlers',
                 'altnames' : '',
                 'image' : 'https://tea-api-boonaki.herokuapp.com/assets/satemwa-antlers.jpg',
                 'origin' : 'Malawi',
@@ -1097,6 +1175,7 @@ const organizedTeas = {
     'blends' : {
         "earlgrey" : {
             'name' : 'Earl Grey',
+            'slug' : 'earlgrey',
             'altnames' : '',
             'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Earl_Grey_Tea.jpg/640px-Earl_Grey_Tea.jpg',
             'origin' : 'UK*',
@@ -1112,6 +1191,7 @@ const organizedTeas = {
 
         "ladygrey" : {
             'name' : 'Lady Grey',
+            'slug' : 'ladygrey',
             'altnames' : '',
             'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/TwiningsLadyGrey_low.jpg/640px-TwiningsLadyGrey_low.jpg',
             'origin' : 'UK*',
@@ -1127,6 +1207,7 @@ const organizedTeas = {
 
         "englishbreakfast" : {
             'name' : 'English Breakfast tea',
+            'slug' : 'englishbreakfast',
             'altnames' : 'Breakfast tea',
             'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/English_breakfast_tea_tin.jpg/536px-English_breakfast_tea_tin.jpg',
             'origin' : 'UK',
@@ -1142,6 +1223,7 @@ const organizedTeas = {
 
         "irishbreakfast" : {
             'name' : 'Irish Breakfast',
+            'slug' : 'irishbreakfast',
             'altnames' : '',
             'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Milk_in_Irish_Breakfast_tea.jpg/480px-Milk_in_Irish_Breakfast_tea.jpg',
             'origin' : 'UK',
@@ -1157,6 +1239,7 @@ const organizedTeas = {
 
         "masalachai" : {
             'name' : 'Masala Chai',
+            'slug' : 'masalachai',
             'altnames' : 'Spiced tea',
             'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Contents_of_a_bag_of_chai_tea.jpg/640px-Contents_of_a_bag_of_chai_tea.jpg',
             'origin' : 'India',
@@ -1172,6 +1255,7 @@ const organizedTeas = {
 
         "russiancaravan" : {
             'name' : 'Russian Caravan',
+            'slug' : 'russiancaravan',
             'altnames' : '',
             'image' : 'https://tea-api-boonaki.herokuapp.com/assets/russiancaravan.jpg',
             'origin' : 'China',
@@ -1187,6 +1271,7 @@ const organizedTeas = {
 
         "genmaicha" : {
             'name' : 'Genmaicha',
+            'slug' : 'genmaicha',
             'altnames' : 'Brown Rice Tea, Popcorn Tea',
             'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Genmaicha.JPG/640px-Genmaicha.JPG',
             'origin' : 'Japan',
@@ -1202,6 +1287,7 @@ const organizedTeas = {
 
         "jasminedragonpearl" : {
             'name' : 'Jasmine Dragon Pearl',
+            'slug' : 'jasminedragonpearl',
             'altnames' : '',
             'image' : 'https://tea-api-boonaki.herokuapp.com/assets/jasminedragon.jpg',
             'origin' : 'China',
