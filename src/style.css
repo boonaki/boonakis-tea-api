@@ -1,4 +1,16 @@
-.clearfix:after {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+
+
+
+
+/* .clearfix:after {
     content: ".";
     display: block;
     clear: both;
@@ -37,4 +49,4 @@ ul{
 }
 li{
     list-style: none;
-}
+} */
