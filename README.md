@@ -2,7 +2,7 @@
 This is a free tea database that gives simple information about various teas and their types. A majority of the information gathered comes from https://www.wikipedia.org
 
 - **Access it here:** https://tea-api-boonaki.herokuapp.com/
-- **See it in action!** https://just-teas.herokuapp.com
+- **See it in action!** https://justteas.herokuapp.com
 
 <p>
  Teas will contain the following information:
