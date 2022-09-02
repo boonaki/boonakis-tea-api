@@ -551,6 +551,40 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -591,12 +625,20 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-36 {
   height: 9rem;
 }
 
 .h-44 {
   height: 11rem;
+}
+
+.h-400 {
+  height: 400px;
 }
 
 .w-full {
@@ -770,67 +812,9 @@ video {
   transition-duration: 100ms;
 }
 
-/* #header section:first-of-type{
-    width: 400px;
-} */
-
 #includes li{
   padding-left: 30px;
 }
-
-/* #urlEndPoint{
-    width: 60%;
-    margin: 0 20%;
-} */
-
-/* #routesResponse{
-    background: rgb(183 147 106);
-} */
-
-/* #routes{
-    background: #B09F8B;
-} */
-
-/* .clearfix:after {
-    content: ".";
-    display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
-}
-
-.clear {
-   clear: both;
-}
-
-#doc{
-    text-align: center;
-    padding: 0 20%;
-}
-
-pre{
-    background-color: #eee;
-    border: 1px solid #999;
-    scrollbar-color: dark;
-    width: 100%;
-    max-height: 800px;
-    display: inline-block;
-    overflow: auto;
-    text-align: left;
-    padding: 20px; 
-}
-
-#doc > p{
-    font-size: 15px
-}
-
-ul{
-    padding-left: 0;
-}
-li{
-    list-style: none;
-} */
 
 .hover\:bg-spanTan:hover {
   --tw-bg-opacity: 1;

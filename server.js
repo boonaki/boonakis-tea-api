@@ -1,3 +1,4 @@
+
 const express = require('express')
 const app = express()
 const cors = require('cors')
@@ -11,6 +12,7 @@ const connectionString = process.env.CONNECTIONSTRING
 
 app.use(cors())
 app.use('/assets', express.static('assets'));
+app.use(express.static('public'))
 
 const PORT = process.env.PORT || 8000
 

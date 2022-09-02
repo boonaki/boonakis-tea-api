@@ -9,9 +9,34 @@ let animation = bodymovin.loadAnimation({
 function openReq(id){
     id = id.split('-')[1]
     let expandeds = document.getElementsByClassName('res')
-    console.log(expandeds.length + 1, id)
-    for(let i = 1; i < expandeds.length + 1; i++){
+    for(let i = 0; i < expandeds.length; i++){
         expandeds[i].classList.add('hidden')
     }
     document.getElementById(`res-${id}`).classList.remove('hidden')
 }
+
+// fillOrganized()
+// fillUnorganized()
+
+// function fillOrganized(){
+//     let organized = document.querySelector('#organized')
+//     let URL = "https://tea-api-boonaki.herokuapp.com/api/teas"
+//     fetch(URL)
+//         .then(res => res.json())
+//         .then(data => {
+//             // console.log()
+//             // organized.innerHTML = data
+//         })
+// }
+// function fillUnorganized(){
+//     let unorganized = document.querySelector('#unorganized')
+//     let URL = "https://tea-api-boonaki.herokuapp.com/api/all"
+//     fetch(URL)
+//         .then(res => res.json())
+//         .then(data => {
+//             data.forEach((obj) => {
+//                 console.log(obj)
+//             })
+//             // unorganized.innerHTML = data
+//         })
+// }
