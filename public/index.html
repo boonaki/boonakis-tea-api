@@ -4,45 +4,82 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Boonaki's Tea API</title>
         <link rel="stylesheet" href="./output.css">
         <link rel="stylesheet" href="../src/style.css">
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js'></script>
+        <script src='./main.js' defer></script>
         <!-- <link rel="stylesheet" href="./assets/css/normalize.css"> -->
     </head>
-    <body class="h-screen bg-slate-800">
+    <body class="">
         <img class="h-36 w-full object-cover" src="../assets/bg.jpg">
-        <section class="flex flex-row flex-wrap mt-12 justify-evenly h-6/12 text-slate-200">
-            <div class="flex flex-col w-2/6 justify-center items-center shrink">
-                <h1 class="text-5xl">Boonaki's Tea API</h1>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-2/12 fill-slate-200"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M88 0C74.7 0 64 10.7 64 24c0 38.9 23.4 59.4 39.1 73.1l1.1 1C120.5 112.3 128 119.9 128 136c0 13.3 10.7 24 24 24s24-10.7 24-24c0-38.9-23.4-59.4-39.1-73.1l-1.1-1C119.5 47.7 112 40.1 112 24c0-13.3-10.7-24-24-24zM32 192c-17.7 0-32 14.3-32 32V416c0 53 43 96 96 96H288c53 0 96-43 96-96h16c61.9 0 112-50.1 112-112s-50.1-112-112-112H352 32zm352 64h16c26.5 0 48 21.5 48 48s-21.5 48-48 48H384V256zM224 24c0-13.3-10.7-24-24-24s-24 10.7-24 24c0 38.9 23.4 59.4 39.1 73.1l1.1 1C232.5 112.3 240 119.9 240 136c0 13.3 10.7 24 24 24s24-10.7 24-24c0-38.9-23.4-59.4-39.1-73.1l-1.1-1C231.5 47.7 224 40.1 224 24z"/></svg>
+        <section id="header" class="flex flex-row flex-wrap justify-evenly h-6/12 text-slate-200">
+            <div class="flex flex-col justify-center items-center p-4">
+                <h1 class="text-5xl mb-6">Boonaki's Tea API</h1>
+                <div id="animContainer"></div>
             </div>
-            <div class="w-2/6 shrink">
-                <label for="includes" class="text-xl">Each Tea will include...</label>
-                <ul id="includes" class="list-disc">
-                    <li>Name</li>
-                    <li>Alternate Names</li>
-                    <li>Origin</li>
-                    <li>Image</li>
-                    <li>Caffeine Content (1 cup/8 fl. oz.)</li>
-                    <li>Type or types</li>
-                    <li>Quick description</li>
-                    <li>Taste description</li>
-                    <li>Color description</li>
-                    <li>If tea is a blend, data will include the main ingredients</li>
+            <div class="w-80 flex flex-col justify-center my-8 text-slate-900 rounded-xl">
+                <label for="includes" class="text-2xl pl-4 text-neutral-50">API response information...</label>
+                <ul id="includes" class="text-neutral-50">
+                    <li>- Name</li>
+                    <li>- Alternate Names</li>
+                    <li>- Origin</li>
+                    <li>- Image</li>
+                    <li>- Caffeine Content (1 cup/8 fl. oz.)</li>
+                    <li>- Type or types</li>
+                    <li>- Quick description</li>
+                    <li>- Taste description</li>
+                    <li>- Color description</li>
+                    <li>- If tea is a blend, data will include the main ingredients</li>
                 </ul>
             </div>
         </section>
-        <section id="routes">
-            <div id="routes_list">
-                <h2>Routes</h2>
-                <span>Get the organized list</span>
-                <span>Get the unorganized list</span>
-                <span>Query for an individual tea</span>
+        <section id="routes" class="">
+            <h2 class="text-4xl text-slate-200 w-full ml-20 my-6">Routes</h2>
+            <div id="routesList" class="flex flex-row justify-evenly items-center w-full flex-wrap">
+                <span class="p-4 rounded-xl shadow-lg w-3/12 text-center">Get the organized list</span>
+                <span class="p-4 rounded-xl shadow-lg w-3/12 text-center">Get the unorganized list</span>
+                <span class="p-4 rounded-xl shadow-lg w-3/12 text-center">Query for an individual tea</span>
             </div>
-            <div id="routes_reponse">
-                <div></div>
-                <div></div>
-                <div></div>
+            <div id="routesResponse" class="w-full mt-4">
+                <div class="w-full">
+                    <div id="urlEndPoint" class="flex flex-col justify-center rounded-xl h-44">
+                        <div class="flex flex-row items-center justify-between p-4 my-2 rounded-3xl border-4">
+                            <h2 class="text-2xl">URL</h2>
+                            <h2 class="text-xl">https://tea-api-boonaki.herokuapp.com/</h2>
+                        </div>
+                        <div class="flex flex-row items-center justify-between p-4 my-2 rounded-3xl border-4">
+                            <h2 class="text-2xl">endpoint</h2>
+                            <h2 class="text-xl">/api/teas/[teaname]</h2>
+                        </div>
+                    </div> 
+                    <pre class="">
+                        <code class="">
+"earlgrey" : {
+    'name' : 'Earl Grey',
+    'altnames' : '',
+    'image' : 'https://commons.wikimedia.org/wiki/File:Earl_Grey_Tea.jpg#/media/File:Earl_Grey_Tea.jpg',
+        
+    'origin' : 'UK*',
+    'type' : 'blend',
+    'caffeine' : '40-120',
+    'mainIngredients' : 'Black Tea, Oil of Bergamot',
+
+    'description' : 'A tea blend which has been flavoured with oil of bergamot',
+    'colorDescription' : 'Amber, deep orange',
+    'tasteDescription' : 'smoky, earthy, spicy, nutty, citrus, caramel, leather, fruity, and honey',
+
+    'sources' : ['https://en.wikipedia.org/wiki/Earl_Grey_tea'],
+},
+                        </code>
+                    </pre>
+                </div>
+                <div>
+
+                </div>
+                <div>
+
+                </div>
             </div>
         </section>
         <!-- <section id="doc">
