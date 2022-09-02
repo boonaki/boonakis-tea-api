@@ -2,39 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background: #302A38;
-}
 
-#header{
-    background: #302A38;
-}
 
 /* #header section:first-of-type{
     width: 400px;
 } */
 
-#header div + div{
-    background: rgb(183 147 106);
-}
-
-#routesList span{
-    background: rgb(251 235 217);
-    /* border: 1px solid #302A38; */
-    cursor: pointer;
-}
 #includes li{
     padding-left: 30px;
 }
 
-#urlEndPoint{
+/* #urlEndPoint{
     width: 60%;
     margin: 0 20%;
-}
+} */
 
-#routesResponse{
+/* #routesResponse{
     background: rgb(183 147 106);
-}
+} */
 
 /* #routes{
     background: #B09F8B;
