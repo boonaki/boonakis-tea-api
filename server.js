@@ -1,3 +1,4 @@
+
 const express = require('express')
 const app = express()
 const cors = require('cors')
@@ -11,6 +12,7 @@ const connectionString = process.env.CONNECTIONSTRING
 
 app.use(cors())
 app.use('/assets', express.static('assets'));
+app.use(express.static('public'))
 
 const PORT = process.env.PORT || 8000
 
@@ -35,7 +37,7 @@ MongoClient.connect(connectionString, { useUnifiedTopology: true })
         // app.use(bodyParser.json())
 
         app.get('/', (req, res) => {
-            res.sendFile(__dirname + '/index.html')
+            res.sendFile(__dirname + '/public/index.html')
         })
         
         app.get('/api/all', (req,res) => {

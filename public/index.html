@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Boonaki's Tea API</title>
+        <link rel="stylesheet" href="./output.css">
+        <link rel="stylesheet" href="../src/style.css">
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js'></script>
+        <script src='./main.js' defer></script>
+        <!-- <link rel="stylesheet" href="./assets/css/normalize.css"> -->
+    </head>
+    <body class="bg-someSlate">
+        <img class="h-36 w-full object-cover" src="../assets/bg.jpg">
+        <section id="header" class="bg-someSlate flex flex-row flex-wrap justify-evenly h-6/12 text-slate-200">
+            <div class="flex flex-col justify-center items-center p-4">
+                <h1 class="text-5xl mb-6">Boonaki's Tea API</h1>
+                <div id="animContainer"></div>
+            </div>
+            <div class="w-80 bg-spanTan flex flex-col justify-center my-8 text-slate-900 rounded-3xl border-4 border-white">
+                <label for="includes" class="text-2xl pl-4">API response information...</label>
+                <ul id="includes" class="">
+                    <li>- Name</li>
+                    <li>- Alternate Names</li>
+                    <li>- Origin</li>
+                    <li>- Image</li>
+                    <li>- Caffeine Content (1 cup/8 fl. oz.)</li>
+                    <li>- Type or types</li>
+                    <li>- Quick description</li>
+                    <li>- Taste description</li>
+                    <li>- Color description</li>
+                    <li>- If tea is a blend, data will include the main ingredients</li>
+                </ul>
+            </div>
+        </section>
+        <section id="routes" class="">
+            <h2 class="text-4xl text-slate-200 ml-20 my-6">Routes</h2>
+            <div id="routesList" class="flex flex-row justify-evenly items-center w-full flex-wrap">
+                <span id="req-0" onClick="openReq(this.id)" class="p-4 rounded-xl shadow-xl w-3/12 text-center text-lg bg-grey hover:bg-spanTan duration-100 border-4 border-white cursor-pointer">Get the organized list</span>
+                <span id="req-1" onClick="openReq(this.id)" class="p-4 rounded-xl shadow-xl w-3/12 text-center text-lg bg-grey hover:bg-spanTan duration-100 border-4 border-white cursor-pointer">Get the unorganized list</span>
+                <span id="req-2" onClick="openReq(this.id)" class="p-4 rounded-xl shadow-xl w-3/12 text-center text-lg bg-grey hover:bg-spanTan duration-100 border-4 border-white cursor-pointer">Query for an individual tea</span>
+            </div>
+            <div id="routesResponse" class="w-full mt-8 bg-slate-200 py-8">
+
+                <div id="res-0" class="res w-full hidden">
+                    <div class="flex flex-col justify-center rounded-xl h-44 pt-8 w-3/5 mx-1/5">
+                        <div class="flex flex-row items-center justify-between p-4 my-2 rounded-3xl border-4 border-white bg-grey shadow-lg">
+                            <h2 class="text-2xl">URL:</h2>
+                            <h2 class="text-xl">https://tea-api-boonaki.herokuapp.com/</h2>
+                        </div>
+                        <div class="flex flex-row items-center justify-between p-4 my-2 rounded-3xl border-4 border-white bg-grey shadow-lg">
+                            <h2 class="text-2xl">Method:</h2>
+                            <h2 class="text-xl">GET</h2>
+                        </div>
+                        <div class="flex flex-row items-center justify-between p-4 my-2 rounded-3xl border-4 border-white bg-grey shadow-lg">
+                            <h2 class="text-2xl">endpoint:</h2>
+                            <h2 class="text-xl">/api/teas</h2>
+                        </div>
+                    </div> 
+                    <pre class="w-3/5 mx-1/5 mt-20 p-4 bg-neutral-600 rounded-xl overflow-auto h-400 shadow-lg rounded-3xl border-4 border-white">
+                        <code id="organized" class="text-slate-200 text-lg">
+'black' : {
+    'name' : 'Black Tea',
+    'slug' : 'black',
+    'altnames' : 'Red Tea',
+    'origin' : 'China',
+    'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Cup_of_black_tea.JPG/1920px-Cup_of_black_tea.JPG?20150517152936',
+    'caffeine' : '40-120mg',
+    'caffeineLevel' : 'high',
+    'sources' : ['https://en.wikipedia.org/wiki/Black_tea'],
+    'description' : 'Black tea, also translated to red tea in various East Asian languages, is a type of tea that is more oxidized than other types',
+    'colorDescription' : 'red, amber',
+    'tasteDescription' : 'smoky, earthy, spicy, nutty, citrus, caramel, leather, fruity, and honey',
+    'types' : {
+        "assam" : {
+            'name' : 'Assam Tea',
+            'slug' : 'assam',
+            'altnames' : '',
+            'image' : 'https://upload.wikimedia.org/wikipedia/commons/3/3b/Assam-Tee_SFTGFOP1.jpg',
+            'origin' : 'Assam, India',
+            'type' : 'black',
+            'caffeine' : '60-110mg',
+            'caffeineLevel' : 'high',
+            'decription' : 'Assam tea is mostly grown at or near sea level and is known for its body, briskness, malty flavour, and strong, bright colour. Assam teas, or blends containing Assam, are often sold as "breakfast" teas.',
+            'colorDescription' : 'deep-amber',
+            'tasteDescription' : 'The flavor can range from brisk, smokey, earthy, musky and strong to a lighter cup with chocolate, cocoa, or even sweet and spicy notes',
+            'sources' : ['https://en.wikipedia.org/wiki/Assam_tea'],
+        },
+        "darjeeling" : {
+            'name' : 'Darjeeling Tea',
+            'slug' : 'darjeeling',
+            'altnames' : '',
+            'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Darjeeling%2C_India%2C_Darjeeling_tea_in_variety%2C_Black_tea.jpg/1920px-Darjeeling%2C_India%2C_Darjeeling_tea_in_variety%2C_Black_tea.jpg?20210606141050',
+            'origin' : 'India',
+            'type' : 'black',
+            'caffeine' : '50-120mg',
+            'caffeineLevel' : 'very high',
+            'decription' : 'Darjeeling tea is a black tea that is grown and processed in the Darjeeling or Kalimpong Districts in West Bengal, also among the only teas in the world with a Geographical Indication trademark',
+            'sources' : ['https://en.wikipedia.org/wiki/Darjeeling_tea', 'https://www.thespruceeats.com/tea-flushes-in-darjeeling-765194', 'https://www.seriouseats.com/why-you-should-drink-more-darjeeling-tea-what-is-first-flush'],
+            'colorDescription' : 'varying based on how its brewed, from a golden yellow to orange to a deep red.',
+            'tasteDescription' : 'musky-sweet tasting notes similar to muscat wine',
+        },
+        "lapsangsouchong" : {
+            'name' : 'Lapsang Souchong',
+            'slug' : 'lapsangsouchong',
+            'altnames' : 'Smoked Tea, Smoky Souchong',
+            'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Lapsang_Souchong.jpg/1024px-Lapsang_Souchong.jpg?20170625192109',
+            'origin' : 'Fujian Province, China',
+            'type' : 'black',
+            'caffeine' : 'varying',
+            'caffeineLevel' : 'moderate',
+            'decription' : 'Lapsang Souchong is a tea that is smoke-dried over a pinewood fire',
+            'sources' : ['https://en.wikipedia.org/wiki/Lapsang_souchong', ],
+            'colorDescription' : 'ranging from amber to caramel to deep red.',
+            'tasteDescription' : 'sweet, piney, smoky',
+        },
+        "keemun" : {
+            'name' : 'Keemun',
+            'slug' : 'keemun',
+            'altnames' : 'Qimen Red Tea',
+            'image' : 'https://upload.wikimedia.org/wikipedia/commons/2/25/Keemun-img1.jpg',
+            'origin' : 'China',
+            'type' : 'black',
+            'caffeine' : '25-45mg',
+            'caffeineLevel' : 'moderate',
+            'decription' : 'A black tea ',
+            'sources' : ['https://en.wikipedia.org/wiki/Keemun'],
+            'colorDescription' : 'bright red',
+            'tasteDescription' : 'smooth, fruity, malty, unsweetened cocoa',
+        },
+        "dianhong" : {
+            'name' : 'Dianhong Tea',
+            'slug' : 'dianhong',
+            'altnames' : 'Yunnan Red Tea',
+            'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/GoldenDianHong.jpg/800px-GoldenDianHong.jpg?20071029183852',
+            'origin' : 'Yunnan Province, China',
+            'type' : 'black',
+            'caffeine' : '20-40mg',
+            'caffeineLevel' : 'moderate',
+            'decription' : 'A relatively high-end, gourmet Chinese black tea sometimes used in various tea blends. The main difference between Dianhong and other Chinese black teas is the amount of fine leaf buds, or "golden tips," present in the dried tea.',
+            'sources' : ['https://en.wikipedia.org/wiki/Dianhong'],
+            'colorDescription' : 'golden orange',
+            'tasteDescription' : 'sweet, floral, and honey-like, though tends to be stronger and more bitter than other red teas',
+        },
+        "earlgrey" : {
+            'name' : 'Earl Grey',
+            'slug' : 'earlgrey',
+            'altnames' : '',
+            'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Earl_Grey_Tea.jpg/800px-Earl_Grey_Tea.jpg?20111209191130',
+            'origin' : 'UK*',
+            'type' : 'black',
+            'caffeine' : '40-120',
+            'caffeineLevel' : 'high',
+            'description' : 'A tea blend which has been flavoured with oil of bergamot',
+            'colorDescription' : 'Amber, deep orange',
+            'tasteDescription' : 'smoky, earthy, spicy, nutty, citrus, caramel, leather, fruity, and honey',
+            'sources' : ['https://en.wikipedia.org/wiki/Earl_Grey_tea'],
+        },
+    }
+},
+'green' : {
+    'name': 'Green Tea',
+    'slug' : 'green',
+    'image' : 'https://tea-api-boonaki.herokuapp.com/assets/green.jpg',
+    'origin' : 'China',
+    'caffeine' : '~10mg',
+    'sources' : ['https://en.wikipedia.org/wiki/Green_tea'],
+    'description' : 'Made from unoxidized leaves, Green tea is one of the least processed types of tea, offering high levels of antioxidants.',
+    'colorDescription' : 'varying shades of green',
+    'tasteDescription' : 'sweet, bittersweet, nutty, vegetal, buttery, floral, fruity, oceanic',
+    'types' : {
+        "sencha" : {
+            'name' : 'Sencha Tea',
+            'slug' : 'sencha',
+            'altnames' : 'Steeped Tea',
+            'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/2017_Kagoshima_sencha.jpg/1024px-2017_Kagoshima_sencha.jpg?20170624211809',
+            'origin' : 'Japan',
+            'type' : 'green',
+            'caffeine' : '20-40mg',
+            'caffeineLevel' : 'low',
+            'description' : 'A Japanese green tea prepared by infusing whole tea leaves in hot water.',
+            'colorDescription' : 'light green',
+            'tasteDescription' : 'fresh, herbal, or grassy flavor, which can have varying vegetal grassy notes depending on how long it is steeped.',
+            'sources' : ['https://en.wikipedia.org/wiki/Sencha'],
+        },
+    
+        "matcha" : {
+            'name' : 'Matcha Tea',
+            'slug' : 'matcha',
+            'altnames' : '',
+            'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Matcha_Scoop.jpg/1024px-Matcha_Scoop.jpg?20190105233506',
+            'origin' : 'China',
+            'type' : 'green',
+            'caffeine' : '20-90mg',
+            'caffeineLevel' : 'moderate',
+            'description' : 'A finely ground powder of specially grown and processed green tea leaves, traditionally consumed in East Asia.',
+            'colorDescription' : 'green, dark green',
+            'tasteDescription' : 'vegetal grassy notes, natural sweet nuttiness, a touch of bitterness with a pleasant savory ending',
+            'sources' : ['https://en.wikipedia.org/wiki/Matcha'],
+        },
+    
+        "bancha" : {
+            'name' : 'Bancha',
+            'slug' : 'bancha',
+            'altnames' : '',
+            'image' : 'https://upload.wikimedia.org/wikipedia/commons/d/dd/Shizuoka_bancha.jpg',
+            'origin' : 'Japan',
+            'type' : 'green',
+            'caffeine' : '~10mg',
+            'caffeineLevel' : 'very low',
+            'description' : 'Tea that is harvested from the same tea tree as sencha grade, but it is plucked later than sencha is. Can be found in a number of forms such as roasted, unroasted, smoked, etc.',
+            'colorDescription' : 'light green to green-orange',
+            'tasteDescription' : 'mild, earthy grassiness, with dry, toasty notes with less of a deeply vegetal, umami flavo',
+            'sources' : ['https://en.wikipedia.org/wiki/Bancha'],
+        },
+        "gyokuro" : {
+            'name' : 'Gyokuro',
+            'slug' : 'gyokuro',
+            'altnames' : 'Jade Dew, Pearl Dew',
+            'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Gyokuro_img_0067.jpg/480px-Gyokuro_img_0067.jpg',
+            'origin' : 'Japan',
+            'type' : 'green',
+            'caffeine' : '~35mg',
+            'caffeineLevel' : 'low',
+            'description' : 'A type of shaded green tea from Japan. It differs from the standard sencha (a classic unshaded green tea) in being grown under the shade rather than the full sun.',
+            'colorDescription' : 'ranging from light green to dark green',
+            'tasteDescription' : 'very full-bodied, with a taste reminiscent to seaweed and grasses, followed by an intense sweetness',
+            'sources' : ['https://en.wikipedia.org/wiki/Gyokuro'],
+        },
+        "kukicha" : {
+            'name' : 'Kukicha',
+            'slug' : 'kukicha',
+            'altnames' : 'Bōcha, Twig tea, Stalk tea',
+            'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Kukicha.jpg/480px-Kukicha.jpg',
+            'origin' : 'Japan',
+            'type' : 'green',
+            'caffeine' : '1-5mg',
+            'caffeineLevel' : 'very low',
+            'description' : 'A Japanese blend made of stems, stalks, and twigs. It is available as a green tea or in more oxidised processing',
+            'colorDescription' : 'very pale, yellow-green,',
+            'tasteDescription' : 'mildly nutty and slightly creamy sweet flavour',
+            'sources' : ['https://en.wikipedia.org/wiki/Kukicha'],
+        },
+        "konacha" : {
+            'name' : 'Konacha',
+            'slug' : 'konacha',
+            'altnames' : 'Gyokurokonacha',
+            'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Konacha.jpg/640px-Konacha.jpg',
+            'origin' : 'Japan',
+            'type' : 'green',
+            'caffeine' : 'based on plant growth',
+            'caffeineLevel' : 'varied',
+            'description' : 'A type of green tea, composed of the dust, tea buds and small leaves that are left behind after processing Gyokuro or Sencha',
+            'colorDescription' : 'intense green, deep green',
+            'tasteDescription' : 'mild, sweet, and grassy flavor with bitter after taste',
+            'sources' : ['https://en.wikipedia.org/wiki/Konacha'],
+        },
+        "genmaicha" : {
+            'name' : 'Genmaicha',
+            'slug' : 'genmaicha',
+            'altnames' : 'Brown Rice Tea, Popcorn Tea',
+            'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Genmaicha.JPG/640px-Genmaicha.JPG',
+            'origin' : 'Japan',
+            'type' : 'green',
+            'caffeine' : '10mg',
+            'caffeineLevel' : 'low',
+            'description' : 'A Japanese brown rice green tea consisting of green tea mixed with roasted popped brown rice.',
+            'colorDescription' : 'light yellow-green',
+            'tasteDescription' : 'toasty, nutty',
+            'sources' : ['https://en.wikipedia.org/wiki/Genmaicha'],
+        },
+        "hojicha" : {
+            'name' : 'Hojicha',
+            'slug' : 'hojicha',
+            'altnames' : '',
+            'image' : 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Houjicha.jpg/360px-Houjicha.jpg',
+            'origin' : 'Kyoto, Japan',
+            'type' : 'green',
+            'caffeine' : '5-10mg',
+            'caffeineLevel' : 'very low',
+            'description' : 'A Japanese green tea that is roasted in a porcelain pot over charcoal',
+            'colorDescription' : 'distinctive clear red appearance',
+            'tasteDescription' : 'naturally sweet taste and smoky flavor with distinct notes of cocoa',
+            'sources' : ['https://en.wikipedia.org/wiki/H%C5%8Djicha', 'https://hojicha.co/'],
+        },
+    }
+},
+...
+                        </code>
+                    </pre>
+                </div>
+
+                <div id="res-1" class="res hidden">
+                    <div class="flex flex-col justify-center rounded-xl h-44 pt-8 w-3/5 mx-1/5">
+                        <div class="flex flex-row items-center justify-between p-4 my-2 rounded-3xl border-4 border-white bg-grey shadow-lg">
+                            <h2 class="text-2xl">URL:</h2>
+                            <h2 class="text-xl">https://tea-api-boonaki.herokuapp.com/</h2>
+                        </div>
+                        <div class="flex flex-row items-center justify-between p-4 my-2 rounded-3xl border-4 border-white bg-grey shadow-lg">
+                            <h2 class="text-2xl">Method:</h2>
+                            <h2 class="text-xl">GET</h2>
+                        </div>
+                        <div class="flex flex-row items-center justify-between p-4 my-2 rounded-3xl border-4 border-white bg-grey shadow-lg">
+                            <h2 class="text-2xl">endpoint:</h2>
+                            <h2 class="text-xl">/api/all</h2>
+                        </div>
+                    </div> 
+                    <pre class="w-3/5 mx-1/5 mt-20 p-4 bg-neutral-600 rounded-xl overflow-auto h-400 shadow-lg rounded-3xl border-4 border-white">
+                        <code id="unorganized" class="text-slate-200 text-lg">
+'black' : {
+    'name' : 'Black Tea',
+    'slug' : 'black',
+    'altnames' : 'Red Tea',
+    'origin' : 'China',
+    'type' : 'black',
+    'image' : 'https://commons.wikimedia.org/wiki/File:Cup_of_black_tea.JPG#/media/File:Cup_of_black_tea.JPG',
+    'caffeine' : '40-120mg',
+    'sources' : ['https://en.wikipedia.org/wiki/Black_tea'],
+    'description' : 'Black tea, also translated to red tea in various East Asian languages, is a type of tea that is more oxidized than other types',
+    'colorDescription' : 'red, amber',
+    'tasteDescription' : 'smoky, earthy, spicy, nutty, citrus, caramel, leather, fruity, and honey',
+},
+'green' : {
+    'name': 'Green Tea',
+    'slug' : 'green',
+    'image' : 'https://tea-api-boonaki.herokuapp.com/assets/green.jpg',
+    'origin' : 'China',
+    'type' : 'green',
+    'caffeine' : '~10mg',
+    'sources' : ['https://en.wikipedia.org/wiki/Green_tea'],
+    'description' : 'Made from unoxidized leaves, Green tea is one of the least processed types of tea, offering high levels of antioxidants.',
+    'colorDescription' : 'varying shades of green',
+    'tasteDescription' : 'sweet, bittersweet, nutty, vegetal, buttery, floral, fruity, oceanic',
+},
+'oolong' : {
+    'name' : 'Wulong (oolong) Tea',
+    'slug' : 'wulong',
+    'caffeine' : '37-55mg',
+    'origin' : 'East Asia',
+    'type' : 'oolong',
+    'description' : 'A traditional semi-oxidized Chinese tea produced through a process including withering the plant under strong sun and oxidation before curling and twisting',
+    'colorDescription' : 'bright green or yellow, or dark amber and red',
+    'tasteDescription' : 'Similar to black tea, though varied oxidation levels results in widely varied tastes',
+},
+'white' : {
+    'name' : 'White Tea',
+    'slug' : 'white',
+    'caffeine' : 'time/temperature based',
+    'type' : 'white',
+    'origin' : 'East Asia',
+    'description' : 'A style of tea that features young or minimally processed leaves of the Camellia sinensis plant',
+    'colorDescription' : 'light green or light yellow',
+    'tasteDescription' : 'floral, fresh, fruity, with a hint of cucumber or melon.',
+},
+...
+                        </code>
+                    </pre>
+                </div>
+
+                <div id="res-2" class="res">
+                    <div class="flex flex-col justify-center rounded-xl h-44 pt-8 w-3/5 mx-1/5">
+                        <div class="flex flex-row items-center justify-between p-4 my-2 rounded-3xl border-4 border-white bg-grey shadow-lg">
+                            <h2 class="text-2xl">URL:</h2>
+                            <h2 class="text-xl">https://tea-api-boonaki.herokuapp.com/</h2>
+                        </div>
+                        <div class="flex flex-row items-center justify-between p-4 my-2 rounded-3xl border-4 border-white bg-grey shadow-lg">
+                            <h2 class="text-2xl">Method:</h2>
+                            <h2 class="text-xl">GET</h2>
+                        </div>
+                        <div class="flex flex-row items-center justify-between p-4 my-2 rounded-3xl border-4 border-white bg-grey shadow-lg">
+                            <h2 class="text-2xl">endpoint:</h2>
+                            <h2 class="text-xl">/api/teas/[teaname]</h2>
+                        </div>
+                    </div> 
+                    <pre class="w-3/5 mx-1/5 mt-20 p-4 bg-neutral-600 rounded-xl overflow-auto h-400 shadow-lg rounded-3xl border-4 border-white">
+                        <code class="text-slate-200 text-lg">
+"earlgrey" : {
+    'name' : 'Earl Grey',
+    'altnames' : '',
+    'image' : 'https://commons.wikimedia.org/wiki/File:Earl_Grey_Tea.jpg#/media/File:Earl_Grey_Tea.jpg',
+        
+    'origin' : 'UK*',
+    'type' : 'blend',
+    'caffeine' : '40-120',
+    'mainIngredients' : 'Black Tea, Oil of Bergamot',
+
+    'description' : 'A tea blend which has been flavoured with oil of bergamot',
+    'colorDescription' : 'Amber, deep orange',
+    'tasteDescription' : 'smoky, earthy, spicy, nutty, citrus, caramel, leather, fruity, and honey',
+
+    'sources' : ['https://en.wikipedia.org/wiki/Earl_Grey_tea'],
+},
+                        </code>
+                    </pre>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="doc">
+            <h1>A free, open-source API for Teas</h1>
+            <p>This is a free tea database that gives simple information about various teas and their types</br>
+            A majority of the information gathered comes from https://www.wikipedia.org</p>
+            <p>Teas will contain the following information</p>
+            <ul>
+                <li>Name</li>
+                <li>Alternate Names</li>
+                <li>Origin</li>
+                <li>Image</li>
+                <li>Caffeine Content (1 cup/8 fl. oz.)</li>
+                <li>Type or types</li>
+                <li>Quick description</li>
+                <li>Taste description</li>
+                <li>Color description</li>
+                <li>If tea is a blend, data will include the main ingredients</li>
+            </ul>
+            <div id="instructions">
+                <h2>Instructions for Use</h2>
+                <p>In this database, their are two main objects inside of the data being sent</p>
+                <p>1. An organized list of the teas with teas sorted by types and nested within their main types object</p>
+                <p>2. An unorganized list of all of the teas in the database</p>
+                To access the organized list, use the url "https://tea-api-boonaki.herokuapp.com/api/teas"</br>
+                To access the un-organized list, use the url "https://tea-api-boonaki.herokuapp.com/api/all"</br>
+                To query the database for individual teas, use the url "https://tea-api-boonaki.herokuapp.com/api/teas/[teaname]"</p>
+                <span>All specified endpoints will return an object</span></br>
+                
+                <span>For example: the url "https://tea-api-boonaki.herokuapp.com/api/teas/earlgrey" will return the following object</span>
+                <pre class="clear">
+                    <code class="clear">
+"earlgrey" : {
+    'name' : 'Earl Grey',
+    'altnames' : '',
+    'image' : 'https://commons.wikimedia.org/wiki/File:Earl_Grey_Tea.jpg#/media/File:Earl_Grey_Tea.jpg',
+        
+    'origin' : 'UK*',
+    'type' : 'blend',
+    'caffeine' : '40-120',
+    'mainIngredients' : 'Black Tea, Oil of Bergamot',
+
+    'description' : 'A tea blend which has been flavoured with oil of bergamot',
+    'colorDescription' : 'Amber, deep orange',
+    'tasteDescription' : 'smoky, earthy, spicy, nutty, citrus, caramel, leather, fruity, and honey',
+
+    'sources' : ['https://en.wikipedia.org/wiki/Earl_Grey_tea'],
+},
+                    </code>
+                </pre>
+            </div>
+        </section> -->
+        
+        <!-- <span>Please use https://tea-api-boonaki.herokuapp.com/api/teas/[tea_name]</span> -->
+    </body>
+</html>
