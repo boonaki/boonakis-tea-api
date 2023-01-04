@@ -3,7 +3,7 @@ let animation = bodymovin.loadAnimation({
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: 'https://assets1.lottiefiles.com/packages/lf20_7zfgb7k9.json' // lottie file path
+    path: 'https://assets9.lottiefiles.com/packages/lf20_epenpdir.json' // lottie file path
 })
 
 function openReq(id){

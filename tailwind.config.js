@@ -7,7 +7,7 @@ module.exports = {
             'background' : '#302A38',
             'spanTan' : 'rgb(251 235 217)',
             'grey': '#bdc8d1',
-            'someSlate': '#748b9f'
+            'someSlate': '#b19588'
         },
         margin: {
             '1/5': '20%',
