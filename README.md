@@ -1,7 +1,7 @@
 # a free, open-source API for tea!
 This is a free tea database that gives simple information about various teas and their types. A majority of the information gathered comes from https://www.wikipedia.org
 
-- **Access it here:** https://tea-api-boonaki.herokuapp.com/
+- **Access it here:** https://boonakitea.up.railway.app/
 - **See it in action!** https://justteas.herokuapp.com
 
 <p>
@@ -33,7 +33,7 @@ This is a free tea database that gives simple information about various teas and
 
 <p>All specified endpoints will return an object</p>
 
-**For example:** https://tea-api-boonaki.herokuapp.com/api/teas/earlgrey will return the following object:
+**For example:** https://boonakitea.up.railway.app/api/teas/earlgrey will return the following object:
      
 ```
 "earlgrey" : {
